@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <BottomMargin>2.5cm</BottomMargin>
+  <RightMargin>2.5cm</RightMargin>
+  <PageWidth>21cm</PageWidth>
+  <ReportParameters>
+    <ReportParameter Name="dwmc">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_0</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="zrs">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="tjrq">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_2</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="bgrq">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_3</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="bgrqdx">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_4</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Rectangle Name="rectangle1">
+        <ReportItems>
+          <Subreport Name="subreport1">
+            <Parameters>
+              <Parameter Name="dwmc">
+                <Value>=Parameters!dwmc.Value</Value>
+              </Parameter>
+              <Parameter Name="bgrq">
+                <Value>=Parameters!bgrqdx.Value</Value>
+              </Parameter>
+            </Parameters>
+            <Width>27.75cm</Width>
+            <ReportName>Report_jcjg_fm</ReportName>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <Height>1.5cm</Height>
+          </Subreport>
+        </ReportItems>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <PageBreakAtEnd>true</PageBreakAtEnd>
+        <Height>2cm</Height>
+      </Rectangle>
+      <Rectangle Name="rectangle2">
+        <ReportItems>
+          <Subreport Name="subreport2">
+            <Width>27.75cm</Width>
+            <ReportName>Report_zyjc_hzxx</ReportName>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <Height>1.5cm</Height>
+          </Subreport>
+        </ReportItems>
+        <Top>2.5cm</Top>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <PageBreakAtEnd>true</PageBreakAtEnd>
+        <Height>2cm</Height>
+      </Rectangle>
+      <Rectangle Name="rectangle3">
+        <ReportItems>
+          <Subreport Name="subreport3">
+            <Parameters>
+              <Parameter Name="dwmc">
+                <Value>=Parameters!dwmc.Value</Value>
+              </Parameter>
+              <Parameter Name="zrs">
+                <Value>=Parameters!zrs.Value</Value>
+              </Parameter>
+              <Parameter Name="tjrq">
+                <Value>=Parameters!tjrq.Value</Value>
+              </Parameter>
+              <Parameter Name="bgsj">
+                <Value>=Parameters!bgrq.Value</Value>
+              </Parameter>
+            </Parameters>
+            <Width>27.75cm</Width>
+            <ReportName>Report_zyjc_tzs_column7</ReportName>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <Height>1.5cm</Height>
+          </Subreport>
+        </ReportItems>
+        <Top>5cm</Top>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <PageBreakAtEnd>true</PageBreakAtEnd>
+      </Rectangle>
+    </ReportItems>
+    <Height>7cm</Height>
+  </Body>
+  <rd:ReportID>2302ed38-e2c4-45b7-801a-74ea402f243e</rd:ReportID>
+  <LeftMargin>2.5cm</LeftMargin>
+  <Width>28cm</Width>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <Language>zh-CN</Language>
+  <PageFooter>
+    <Height>0.75cm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+  </PageFooter>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

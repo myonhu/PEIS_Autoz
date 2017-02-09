@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <DataSources>
+    <DataSource Name="PEISConnectionString">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=wgh;Initial Catalog=PEIS;Persist Security Info=True;User ID=sa;Password=</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>a32d8489-c442-4a8f-b269-f080d99c09ef</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="PEISDataSet_v_tj_tjdjb">
+      <Fields>
+        <Field Name="djlsh">
+          <DataField>djlsh</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="xm">
+          <DataField>xm</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="xb">
+          <DataField>xb</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="nl">
+          <DataField>nl</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="csrq">
+          <DataField>csrq</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="hyzk">
+          <DataField>hyzk</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="mz">
+          <DataField>mz</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="djrq">
+          <DataField>djrq</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="tjbh">
+          <DataField>tjbh</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="tjcs">
+          <DataField>tjcs</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="dwmc">
+          <DataField>dwmc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="bmmc">
+          <DataField>bmmc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="tjlb">
+          <DataField>tjlb</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="rylb">
+          <DataField>rylb</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="mobile">
+          <DataField>mobile</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="phone">
+          <DataField>phone</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="address">
+          <DataField>address</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="sfzh">
+          <DataField>sfzh</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="sykh">
+          <DataField>sykh</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="dwbh">
+          <DataField>dwbh</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="bmbh">
+          <DataField>bmbh</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="sumover">
+          <DataField>sumover</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="picture">
+          <DataField>picture</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+        <Field Name="xbcode">
+          <DataField>xbcode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="zs">
+          <DataField>zs</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="jy">
+          <DataField>jy</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="jcrq">
+          <DataField>jcrq</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="jcys">
+          <DataField>jcys</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="tjjl">
+          <DataField>tjjl</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="jktj">
+          <DataField>jktj</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="czy">
+          <DataField>czy</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="gl">
+          <DataField>gl</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="tjrq">
+          <DataField>tjrq</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="whysmc">
+          <DataField>whysmc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="wyyslb">
+          <DataField>wyyslb</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="rylbmc">
+          <DataField>rylbmc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="zytjjl">
+          <DataField>zytjjl</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="zytjjy">
+          <DataField>zytjjy</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>PEISConnectionString</DataSourceName>
+        <CommandText>SELECT djlsh, xm, xb, nl, csrq, hyzk, mz, Convert(varchar(10),tjrq,121) tjrq, djrq, tjbh, tjcs, dwmc, bmmc, tjlb, rylb, mobile, phone, address, sfzh, sykh, dwbh, bmbh, sumover, picture, xbcode, zs, jy, jcrq, jcys, tjjl, jktj, czy,gl,whys,wyyslb,whysmc,rylbmc,zytjjl,zytjjy FROM v_tj_tjdjb</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>PEISDataSet</rd:DataSetName>
+        <rd:TableName>v_tj_tjdjb</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>v_tj_tjdjbTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Body>
+    <ReportItems>
+      <Rectangle Name="rectangle5">
+        <ReportItems>
+          <Subreport Name="subreport4">
+            <ReportName>report_tjzhxmmx</ReportName>
+            <KeepTogether>true</KeepTogether>
+            <Left>0.25cm</Left>
+            <Height>1cm</Height>
+            <Width>17cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+          </Subreport>
+        </ReportItems>
+        <PageBreak>
+          <BreakLocation>End</BreakLocation>
+        </PageBreak>
+        <DataElementOutput>ContentsOnly</DataElementOutput>
+        <Top>3.5cm</Top>
+        <Height>1cm</Height>
+        <Width>17.5cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+      </Rectangle>
+      <Textbox Name="textbox4">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>="登记流水号:" &amp; First(Fields!djlsh.Value) &amp; "  姓名:" &amp; First(Fields!xm.Value) &amp; "  性别:" &amp; First(Fields!xb.Value) &amp; "  年龄:" &amp; First(Fields!nl.Value)</Value>
+                <Style>
+                  <FontFamily>宋体</FontFamily>
+                  <FontSize>11pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>textbox4</rd:DefaultName>
+        <Top>1.75cm</Top>
+        <Left>1cm</Left>
+        <Height>0.63492cm</Height>
+        <Width>17cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Line Name="line1">
+        <Top>3.25cm</Top>
+        <Left>1cm</Left>
+        <Height>0cm</Height>
+        <Width>17cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+            <Width>2pt</Width>
+          </Border>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+      </Line>
+      <Textbox Name="textbox5">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>="身份证号:" &amp; First(Fields!sfzh.Value) &amp; "  体检日期:" &amp; Format( First(Fields!jcrq.Value),"yyyy-MM-dd")</Value>
+                <Style>
+                  <FontFamily>宋体</FontFamily>
+                  <FontSize>11pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>2.5cm</Top>
+        <Left>1cm</Left>
+        <Height>0.63492cm</Height>
+        <Width>17cm</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="textbox6">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!tjdw.Value &amp;"体检结果表"</Value>
+                <Style>
+                  <FontFamily>宋体</FontFamily>
+                  <FontSize>18pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <Left>0.125cm</Left>
+        <Height>1cm</Height>
+        <Width>17.75cm</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>4.5cm</Height>
+    <Style />
+  </Body>
+  <ReportParameters>
+    <ReportParameter Name="tjdw">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>体检单位名称</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="barcode">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>条形码</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="tjdh">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>体检单位电话</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="yypic">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>医院徽标</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="yyewm">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>医院二维码</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Width>18cm</Width>
+  <Page>
+    <PageFooter>
+      <Height>2.00265cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="textbox1">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>="咨询电话："&amp;Parameters!tjdh.Value</Value>
+                  <Style>
+                    <FontFamily>宋体</FontFamily>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>textbox1</rd:DefaultName>
+          <Left>3.25cm</Left>
+          <Height>0.63492cm</Height>
+          <Width>12.25cm</Width>
+          <Style>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="textbox2">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>="第" &amp; Globals!PageNumber &amp; "页   共" &amp; Globals!TotalPages &amp; "页"</Value>
+                  <Style>
+                    <FontFamily>宋体</FontFamily>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>textbox2</rd:DefaultName>
+          <Top>1.36772cm</Top>
+          <Left>11.75cm</Left>
+          <Height>0.63493cm</Height>
+          <Width>5.25cm</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="textbox3">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>本体检报告仅供临床参考，不作为诊断依据,祝您健康!</Value>
+                  <Style>
+                    <FontFamily>宋体</FontFamily>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <Top>0.67526cm</Top>
+          <Left>3.25cm</Left>
+          <Height>0.63492cm</Height>
+          <Width>12.25cm</Width>
+          <ZIndex>2</ZIndex>
+          <Style>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style />
+    </PageFooter>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2.5cm</LeftMargin>
+    <RightMargin>2.5cm</RightMargin>
+    <TopMargin>2.5cm</TopMargin>
+    <BottomMargin>2.5cm</BottomMargin>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <Language>zh-CN</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportID>5987227a-d5ad-4906-ba63-c87ae232cab6</rd:ReportID>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+</Report>

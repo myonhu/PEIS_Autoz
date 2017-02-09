@@ -1,0 +1,2540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9692DAF8-1BA9-4DCE-83C7-FE7401C5AEF3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PEIS</RootNamespace>
+    <AssemblyName>PEIS</AssemblyName>
+    <StartupObject>PEIS.Program</StartupObject>
+    <SignManifests>true</SignManifests>
+    <SignAssembly>false</SignAssembly>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+    <ApplicationIcon>HIS.ICO</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\健康体检报告系统.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;D:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\健康体检报告系统.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;D:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\健康体检报告系统.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;D:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\健康体检报告系统.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;D:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoUpdater">
+      <HintPath>..\AutoUpdater\bin\Release\AutoUpdater.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.vsFlexLib, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\AxInterop.vsFlexLib.dll</HintPath>
+    </Reference>
+    <Reference Include="BarCode, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\BarCode.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>Dll\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DSBarCode">
+      <HintPath>Dll\DSBarCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Encrypt, Version=2.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\Encrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.StdType, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Interop.StdType.dll</HintPath>
+    </Reference>
+    <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Sybase.Data.AseClient, Version=1.15.325.0, Culture=neutral, PublicKeyToken=26e0f1529304f4a7">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\Sybase.Data.AseClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base.cs" />
+    <Compile Include="CheckSfzh.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="cxbb\cxbbBiz.cs" />
+    <Compile Include="cxbb\Form_gztjb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cxbb\Form_gztjb.Designer.cs">
+      <DependentUpon>Form_gztjb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cxbb\Form_log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cxbb\Form_log.Designer.cs">
+      <DependentUpon>Form_log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cxbb\Form_sftjbb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cxbb\Form_sftjbb.Designer.cs">
+      <DependentUpon>Form_sftjbb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cxbb\Form_tjrstjbb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cxbb\Form_tjrstjbb.Designer.cs">
+      <DependentUpon>Form_tjrstjbb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cxbb\Form_wsftjbb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cxbb\Form_wsftjbb.Designer.cs">
+      <DependentUpon>Form_wsftjbb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cxbb\Form_yxjghz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cxbb\Form_yxjghz.Designer.cs">
+      <DependentUpon>Form_yxjghz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cxbb\Form_tjzcqd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cxbb\Form_tjzcqd.Designer.cs">
+      <DependentUpon>Form_tjzcqd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cxbb\Form_jbrstj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cxbb\Form_jbrstj.Designer.cs">
+      <DependentUpon>Form_jbrstj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cxbb\Form_jbhztj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cxbb\Form_jbhztj.Designer.cs">
+      <DependentUpon>Form_jbhztj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cxbb\Form_jbfbtj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cxbb\Form_jbfbtj.Designer.cs">
+      <DependentUpon>Form_jbfbtj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cxbb\Form_zybhztj_yx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cxbb\Form_zybhztj_yx.designer.cs">
+      <DependentUpon>Form_zybhztj_yx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cxbb\Form_zyjk_tzs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cxbb\Form_zyjk_tzs.Designer.cs">
+      <DependentUpon>Form_zyjk_tzs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cxbb\Gztjb.cs" />
+    <Compile Include="cxbb\Zyjk_tzs.cs" />
+    <Compile Include="cxbb\Form_tjjgmx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cxbb\Form_tjjgmx.Designer.cs">
+      <DependentUpon>Form_tjjgmx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cxbb\Form_tjjgmxyx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cxbb\Form_tjjgmxyx.Designer.cs">
+      <DependentUpon>Form_tjjgmxyx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cxgl\Command.cs" />
+    <Compile Include="cxgl\FormArg.cs" />
+    <Compile Include="cxgl\Form_ggcx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cxgl\Form_ggcx.Designer.cs">
+      <DependentUpon>Form_ggcx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cxgl\Form_tjdwcx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cxgl\Form_tjdwcx.Designer.cs">
+      <DependentUpon>Form_tjdwcx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cxgl\Form_Tjz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cxgl\Form_Tjz.Designer.cs">
+      <DependentUpon>Form_Tjz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cxgl\ListViewExport.cs" />
+    <Compile Include="cxgl\MyListViewSort.cs" />
+    <Compile Include="cxgl\TongJiEntity.cs" />
+    <Compile Include="DataAgent.cs" />
+    <Compile Include="DataGridViewPrint\PrintDGV.cs" />
+    <Compile Include="DataGridViewPrint\PrintOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGridViewPrint\PrintOptions.designer.cs">
+      <DependentUpon>PrintOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetAdd.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetAdd.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataWindows\DataGridViewDataWindowCell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataWindows\DataGridViewDataWindowColumn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataWindows\DataGridViewDataWindowEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataWindows\DataWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataWindows\DataWindowFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataWindows\DataWindowFilter.Designer.cs">
+      <DependentUpon>DataWindowFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataWindows\RowMergeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataWindows\RowMergeView.designer.cs">
+      <DependentUpon>RowMergeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_waiting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_waiting.Designer.cs">
+      <DependentUpon>Form_waiting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jiami.cs" />
+    <Compile Include="jkgl\Form_codeprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jkgl\Form_codeprint.Designer.cs">
+      <DependentUpon>Form_codeprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jkgl\Form_codeprint_data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jkgl\Form_codeprint_data.Designer.cs">
+      <DependentUpon>Form_codeprint_data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jkgl\Form_gxdz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jkgl\Form_gxdz.Designer.cs">
+      <DependentUpon>Form_gxdz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jkgl\Form_jgagain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jkgl\Form_jgagain.Designer.cs">
+      <DependentUpon>Form_jgagain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jkgl\Form_jgdr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jkgl\Form_jgdr.Designer.cs">
+      <DependentUpon>Form_jgdr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jkgl\Form_jysq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jkgl\Form_jysq.Designer.cs">
+      <DependentUpon>Form_jysq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jkgl\Form_jyxmdz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jkgl\Form_jyxmdz.Designer.cs">
+      <DependentUpon>Form_jyxmdz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jkgl\Form_jyxmdz_dj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jkgl\Form_jyxmdz_dj.Designer.cs">
+      <DependentUpon>Form_jyxmdz_dj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jkgl\Form_jyzhxmdz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jkgl\Form_jyzhxmdz.Designer.cs">
+      <DependentUpon>Form_jyzhxmdz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jkgl\Form_label.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jkgl\Form_label.Designer.cs">
+      <DependentUpon>Form_label.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jkgl\Form_previewreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jkgl\Form_previewreport.Designer.cs">
+      <DependentUpon>Form_previewreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jkgl\LisBiz.cs" />
+    <Compile Include="jkgl\UCBarCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="jkgl\UCBarCode.Designer.cs">
+      <DependentUpon>UCBarCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jkgl\Form_jyxmdz_new.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jkgl\Form_jyxmdz_new.Designer.cs">
+      <DependentUpon>Form_jyxmdz_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jyjk\Form_addJyxm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jyjk\Form_addJyxm.Designer.cs">
+      <DependentUpon>Form_addJyxm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jyjk\Form_jysjlr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jyjk\Form_jysjlr.Designer.cs">
+      <DependentUpon>Form_jysjlr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jyjk\Form_tjryxx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jyjk\Form_tjryxx.Designer.cs">
+      <DependentUpon>Form_tjryxx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jyjk\Form_yfbcx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jyjk\Form_yfbcx.Designer.cs">
+      <DependentUpon>Form_yfbcx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jyjk\Jydj.cs" />
+    <Compile Include="jyjk\Jyjgb.cs" />
+    <Compile Include="jyjk\JyjkBiz.cs" />
+    <Compile Include="main\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main\Form_dh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\Form_dh.Designer.cs">
+      <DependentUpon>Form_dh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main\Form_login_zy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\Form_login_zy.Designer.cs">
+      <DependentUpon>Form_login_zy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main\Form_reg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\Form_reg.Designer.cs">
+      <DependentUpon>Form_reg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main\Form_xtczy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\Form_xtczy.Designer.cs">
+      <DependentUpon>Form_xtczy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main\Form_xtgn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\Form_xtgn.Designer.cs">
+      <DependentUpon>Form_xtgn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main\Form_xtjcsj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\Form_xtjcsj.Designer.cs">
+      <DependentUpon>Form_xtjcsj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main\Form_xtjcsjinsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\Form_xtjcsjinsert.Designer.cs">
+      <DependentUpon>Form_xtjcsjinsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main\Form_yhqxsz_sort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\Form_yhqxsz_sort.Designer.cs">
+      <DependentUpon>Form_yhqxsz_sort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main\Form_yhzqxsz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\Form_yhzqxsz.Designer.cs">
+      <DependentUpon>Form_yhzqxsz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main\Form_yhzsz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\Form_yhzsz.Designer.cs">
+      <DependentUpon>Form_yhzsz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main\Form_ysksqx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\Form_ysksqx.Designer.cs">
+      <DependentUpon>Form_ysksqx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main\MachineCode.cs" />
+    <Compile Include="main\xtggBiz.cs" />
+    <Compile Include="main\ZY_MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\ZY_MainForm.Designer.cs">
+      <DependentUpon>ZY_MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main\Form_login_zypc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\Form_login_zypc.Designer.cs">
+      <DependentUpon>Form_login_zypc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main\Form_login_zycmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\Form_login_zycmp.Designer.cs">
+      <DependentUpon>Form_login_zycmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paradox.cs" />
+    <Compile Include="PEISDataSet.cs">
+      <DependentUpon>PEISDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PEISDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PEISDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PEISDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PEISDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PEISDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PEISDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PEISLXDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PEISLXDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PEISLXDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PEISLXDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PEISLXDataSetzhz.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PEISLXDataSetzhz.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PrintWaiting.cs" />
+    <Compile Include="RdlcPrint.cs" />
+    <Compile Include="Rdlc\Form_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rdlc\Form_report.Designer.cs">
+      <DependentUpon>Form_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rdlc\Form_reportZYJKTJBG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rdlc\Form_reportZYJKTJBG.Designer.cs">
+      <DependentUpon>Form_reportZYJKTJBG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rdlc\rdlcBiz.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\ComponentModel\BoundDataView.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\ComponentModel\BoundList.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\ComponentModel\BoundListBase.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\ComponentModel\IBoundList.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\AnchorArea.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\BorderLine.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\BrushsCache.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\EditablePanel.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\EditablePanelBase.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\EditablePanelThemed.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\Enums.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\GraphicsCache.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\IBorder.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\MeasureHelper.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\Padding.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\PensCache.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\RectangleBorder.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\RoundedRectangle.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\Utilities.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\BackgroundBase.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\BackgroundBorder.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\BackgroundBorderBase.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\BackgroundLinearGradient.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\BackgroundSolid.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\Button.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\ButtonBase.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\ButtonThemed.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\CheckBox.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\CheckBoxBase.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\CheckBoxThemed.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\ColumnHeader.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\ColumnHeaderBase.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\ColumnHeaderThemed.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\Container.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\ContainerBase.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\DropDownButton.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\DropDownButtonBase.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\DropDownButtonThemed.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\Header.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\HeaderBase.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\HeaderThemed.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\Icon.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\Image.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\RichText.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\RichTextGDI.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\RowHeader.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\RowHeaderBase.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\RowHeaderThemed.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\SortIndicator.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\SortIndicatorThemed.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\Text.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\TextGDI.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\TextRenderer.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\VisualElementBase.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\VisualElementList.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Properties\Resources.Designer.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\ButtonMultiSelection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\ColorPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\CommonImages.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\ControlCursor.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\DevAgeComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\DevAgeMaskedTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\DevAgeNumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\DevAgeRichTextBox.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\DevAgeTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\DevAgeTextBoxButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\DropDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\DropDownButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\EditableControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\ErrorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\ErrorDialogDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\FormSingleton.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\HeaderGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\ImageNavigator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\Line.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\LinkLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\PositionRecorder.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\SendCharExact.cs" />
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\TextBoxUITypeEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\Utilities.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Collections\ListByType.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\ComponentModel\ComponentLight.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\ComponentModel\Converter\CurrencyTypeConverter.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\ComponentModel\Converter\DateTimeTypeConverter.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\ComponentModel\Converter\NumberTypeConverter.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\ComponentModel\Converter\PercentTypeConverter.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\ComponentModel\Converter\RichTextTypeConverter.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\ComponentModel\TypeDescriptorContext.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\ComponentModel\ValidatingEvent.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\ComponentModel\Validator\IValidator.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\ComponentModel\Validator\ValidatorBase.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\ComponentModel\Validator\ValidatorTypeConverter.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\ComponentModel\Validator\ValueMapping.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Configuration\CommandLineArgs.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Configuration\ConfigurationException.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Configuration\PersistableItem.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Configuration\PersistableItemDictionary.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Configuration\PersistableSettings.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Data\DataSetHelper.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Data\Exceptions\Exceptions.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Data\FileDataSet.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Data\SqlClient\SqlCommandBuilder.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Data\StreamDataSet.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\DateTimeHelper.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\IO\IsolatedStorage\IsolatedStorageSettingBase.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\IO\IsolatedStorage\IsolatedStorageSettingVersionBase.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\IO\StreamPersistence.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\IO\StringPersistence.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Patterns\Activity.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Patterns\ActivityCollection.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Patterns\ActivityEvents.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Patterns\AsyncActivity.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Patterns\Exceptions.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Runtime\Serialization\Utilities.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Security\Cryptography\Utilities.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Shell\MailToProtocol.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Shell\Utilities.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Text\FixedLength\Attributes.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Text\FixedLength\Exceptions.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Text\FixedLength\Field.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Text\FixedLength\FieldList.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Text\FixedLength\LineParser.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Text\FixedLength\LineWriter.cs" />
+    <Compile Include="SourceGrid\DevAgeSourcePack4\Text\FixedLength\Utilities.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\ArrayGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\SourceGrid.Extensions\Cells\DataGridCells.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\Conditions\ConditionBuilder.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\Conditions\ConditionCell.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\Conditions\ConditionView.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\Conditions\ICondition.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\DataGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\SourceGrid.Extensions\DataGridColumn.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\DataGridRow.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\ListEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\SourceGrid.Extensions\PingGrids\Cells\Cell.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\PingGrids\Cells\CheckBox.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\PingGrids\Cells\ColumnHeader.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\PingGrids\Cells\Header.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\PingGrids\Cells\Image.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\PingGrids\Cells\Link.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\PingGrids\Cells\RowHeader.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\PingGrids\EmptyPingSource.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\PingGrids\IPingData.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\PingGrids\IPropertyResolver.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\PingGrids\PingGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\SourceGrid.Extensions\PingGrids\PingGridCellController.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\PingGrids\PingGridColumn.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\PingGrids\PingGridColumns.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\PingGrids\PingGridRowHeaderModel.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\PingGrids\PingGridRows.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\PingGrids\PingGridValueModel.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\PingGrids\ReflectionPropertyResolver.cs" />
+    <Compile Include="SourceGrid\SourceGrid.Extensions\PlanningGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\SourceGrid\Cells\Button.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Cell.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\CellCollection.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\CellContext.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\CellControl.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\CellVirtual.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\CheckBox.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\ColumnHeader.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Controllers\BindProperty.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Controllers\Button.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Controllers\CellEventDispatcher.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Controllers\CheckBox.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Controllers\ColumnFocus.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Controllers\ColumnSelector.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Controllers\ControllerBase.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Controllers\ControllerContainer.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Controllers\CustomEvents.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Controllers\IController.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Controllers\MouseCursor.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Controllers\MouseInvalidate.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Controllers\MouseSelection.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Controllers\Resizable.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Controllers\RichTextBox.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Controllers\RowFocus.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Controllers\RowSelector.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Controllers\SortableHeader.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Controllers\StandardBehavior.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Controllers\ToolTipText.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Controllers\Unselectable.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Editors\ComboBox.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Editors\DateTimePicker.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Editors\EditorBase.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Editors\EditorControlBase.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Editors\Factory.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Editors\ImagePicker.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Editors\NumericUpDown.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Editors\RichTextBox.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Editors\TextBox.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Editors\TextBoxButton.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Editors\TextBoxCurrency.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Editors\TextBoxNumeric.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Editors\TextBoxUITypeEditor.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Editors\TimePicker.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Header.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\ICell.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\ICellVirtual.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Image.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Link.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Models\ICheckBox.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Models\IImage.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Models\IModel.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Models\IRichTextBox.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Models\ISortableHeader.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Models\IToolTipText.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Models\IValueModel.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Models\ModelContainer.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Models\Real\Models.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Models\Real\RichTextBox.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\RichTextBox.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\RowHeader.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Views\Button.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Views\Cell.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Views\CheckBox.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Views\ColumnHeader.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Views\ComboBox.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Views\Header.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Views\IView.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Views\Link.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Views\MultiImages.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Views\RichTextBox.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Views\RowHeader.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Cells\Views\ViewBase.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Common\ColumnInfo.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Common\ColumnInfoCollection.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Common\ColumnsBase.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Common\ColumnsSimpleBase.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Common\CustomScrollControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\SourceGrid\Common\Enums.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Common\Events.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Common\IHiddenRowCoordinator.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Common\IRows.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Common\LinkedControlsList.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Common\Position.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Common\PositionCollection.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Common\Range.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Common\RangeCollection.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Common\RangeData.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Common\RangeRegion.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Common\RowInfo.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Common\RowInfoCollection.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Common\RowInfoCollectoinHiddenRowCoordinator.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Common\RowsBase.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Common\RowsSimpleBase.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Common\StandardHiddenRowCoordinator.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Common\Utilities.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Common\ValueCellComparer.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Decorators\DecoratorBase.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Decorators\DecoratorHighlight.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Decorators\DecoratorList.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Decorators\DecoratorSelection.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Exporter\CSV.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Exporter\GridPrintDocument.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\SourceGrid\Exporter\HTML.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Exporter\Image.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Grids\Grid.Accessibility.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\SourceGrid\Grids\Grid.Columns.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\SourceGrid\Grids\Grid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\SourceGrid\Grids\Grid.Rows.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Grids\GridVirtual.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SourceGrid\SourceGrid\Grids\ISpannedCellRangesController.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Grids\ISpannedRangesCollection.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Grids\OverlappingCellException.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Grids\QuadTreeRangesList.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Grids\RangeNotFoundException.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Grids\SpannedCellRangesController.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Grids\SpannedRangesList.cs" />
+    <Compile Include="SourceGrid\SourceGrid\QuadTree\IHasRect.cs" />
+    <Compile Include="SourceGrid\SourceGrid\QuadTree\QuadTree.cs" />
+    <Compile Include="SourceGrid\SourceGrid\QuadTree\QuadTreeNode.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Selection\ColumnSelection.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Selection\FreeSelection.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Selection\IGridSelection.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Selection\RangeComparerByRows.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Selection\RangeMergerByRows.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Selection\RowSelection.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Selection\SelectionBase.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Utils\IPerformanceCounter.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Utils\PerformanceCounter.cs" />
+    <Compile Include="SourceGrid\SourceGrid\Utils\SourceGridConvert.cs" />
+    <Compile Include="tjdj\Form_cytjkb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjdj\Form_cytjkb.Designer.cs">
+      <DependentUpon>Form_cytjkb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjdj\Form_dwdj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjdj\Form_dwdj.Designer.cs">
+      <DependentUpon>Form_dwdj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjdj\Form_dwfz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjdj\Form_dwfz.Designer.cs">
+      <DependentUpon>Form_dwfz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjdj\Form_excel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjdj\Form_excel.Designer.cs">
+      <DependentUpon>Form_excel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjdj\Form_pz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjdj\Form_pz.Designer.cs">
+      <DependentUpon>Form_pz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjdj\Form_ryxz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjdj\Form_ryxz.Designer.cs">
+      <DependentUpon>Form_ryxz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjdj\Form_tjsf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjdj\Form_tjsf.Designer.cs">
+      <DependentUpon>Form_tjsf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjdj\Form_tjdj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjdj\Form_tjdj.Designer.cs">
+      <DependentUpon>Form_tjdj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjdj\Form_tjdw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjdj\Form_tjdw.Designer.cs">
+      <DependentUpon>Form_tjdw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjdj\Form_tjpldj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjdj\Form_tjpldj.Designer.cs">
+      <DependentUpon>Form_tjpldj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjdj\Form_tjrqxz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjdj\Form_tjrqxz.Designer.cs">
+      <DependentUpon>Form_tjrqxz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjdj\Form_tjsqd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjdj\Form_tjsqd.Designer.cs">
+      <DependentUpon>Form_tjsqd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjdj\Form_tjtgb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjdj\Form_tjtgb.Designer.cs">
+      <DependentUpon>Form_tjtgb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjdj\Form_tjzyd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjdj\Form_tjzyd.Designer.cs">
+      <DependentUpon>Form_tjzyd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjdj\Form_tmqr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjdj\Form_tmqr.Designer.cs">
+      <DependentUpon>Form_tmqr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjdj\Form_zhxmlr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjdj\Form_zhxmlr.Designer.cs">
+      <DependentUpon>Form_zhxmlr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjdj\Form_tjdw1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjdj\Form_tjdw1.Designer.cs">
+      <DependentUpon>Form_tjdw1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjjg\Form_zywj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjjg\Form_zywj.Designer.cs">
+      <DependentUpon>Form_zywj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjdj\tjdjBiz.cs" />
+    <Compile Include="tjdj\Form_lsjl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjdj\Form_lsjl.Designer.cs">
+      <DependentUpon>Form_lsjl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjdj\Form_tjtxm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjdj\Form_tjtxm.Designer.cs">
+      <DependentUpon>Form_tjtxm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjdj\Form_zhxmtz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjdj\Form_zhxmtz.Designer.cs">
+      <DependentUpon>Form_zhxmtz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjdj\Tjjlb.cs" />
+    <Compile Include="tjdj\VideoClass.cs" />
+    <Compile Include="tjjg\Form_dxlr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjjg\Form_dxlr.Designer.cs">
+      <DependentUpon>Form_dxlr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjjg\Form_jzlr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjjg\Form_jzlr.Designer.cs">
+      <DependentUpon>Form_jzlr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjjg\Form_mxjg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjjg\Form_mxjg.Designer.cs">
+      <DependentUpon>Form_mxjg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjjg\Form_tjbg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjjg\Form_tjbg.Designer.cs">
+      <DependentUpon>Form_tjbg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjjg\Form_tjjgckz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjjg\Form_tjjgckz.Designer.cs">
+      <DependentUpon>Form_tjjgckz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjjg\Form_tjrq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjjg\Form_tjrq.Designer.cs">
+      <DependentUpon>Form_tjrq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjjg\Form_tjrqxz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjjg\Form_tjrqxz.Designer.cs">
+      <DependentUpon>Form_tjrqxz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjjg\Form_tycx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjjg\Form_tycx.Designer.cs">
+      <DependentUpon>Form_tycx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjjg\Form_tzs_ly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjjg\Form_tzs_ly.Designer.cs">
+      <DependentUpon>Form_tzs_ly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjjg\Form_zdlb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjjg\Form_zdlb.Designer.cs">
+      <DependentUpon>Form_zdlb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjjg\Form_zjjl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjjg\Form_zjjl.Designer.cs">
+      <DependentUpon>Form_zjjl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjjg\Form_zyjk_tjbg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjjg\Form_zyjk_tjbg.Designer.cs">
+      <DependentUpon>Form_zyjk_tjbg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjjg\Form_zywj_insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjjg\Form_zywj_insert.Designer.cs">
+      <DependentUpon>Form_zywj_insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjjg\Form_zywj_tzjy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjjg\Form_zywj_tzjy.Designer.cs">
+      <DependentUpon>Form_zywj_tzjy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjjg\MyListViewItem.cs" />
+    <Compile Include="tjjg\MyTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tjjg\MyTextBox.Designer.cs">
+      <DependentUpon>MyTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjjg\SzTjbg.cs" />
+    <Compile Include="tjjg\SzTjbgMx.cs" />
+    <Compile Include="main\TextNumberControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="main\TextNumberControl.Designer.cs">
+      <DependentUpon>TextNumberControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjjg\tjjgBiz.cs" />
+    <Compile Include="CTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tjjg\Form_zywj_out.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjjg\Form_zywj_out.Designer.cs">
+      <DependentUpon>Form_zywj_out.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XPander\BasePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XPander\ColorScheme.cs" />
+    <Compile Include="XPander\IPanel.cs" />
+    <Compile Include="XPander\Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XPander\Panel.designer.cs">
+      <DependentUpon>Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XPander\PanelStyle.cs" />
+    <Compile Include="XPander\XPanderPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XPander\XPanderPanel.designer.cs">
+      <DependentUpon>XPanderPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XPander\XPanderPanelClickEventArgs.cs" />
+    <Compile Include="XPander\XPanderPanelList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XPander\XPanderPanelList.designer.cs">
+      <DependentUpon>XPanderPanelList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xtgg\ConnectionTestInfo.cs" />
+    <Compile Include="xtgg\DataGridViewExport.cs" />
+    <Compile Include="xtgg\Form_dbc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xtgg\Form_dbc.Designer.cs">
+      <DependentUpon>Form_dbc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xtgg\Form_dysz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xtgg\Form_dysz.Designer.cs">
+      <DependentUpon>Form_dysz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xtgg\Form_gzwhysdz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xtgg\Form_gzwhysdz.Designer.cs">
+      <DependentUpon>Form_gzwhysdz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xtgg\Form_sql.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xtgg\Form_sql.Designer.cs">
+      <DependentUpon>Form_sql.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ywsz\Form_cjjgwh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ywsz\Form_cjjgwh.Designer.cs">
+      <DependentUpon>Form_cjjgwh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xtgg\Form_cssz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xtgg\Form_cssz.Designer.cs">
+      <DependentUpon>Form_cssz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xtgg\Form_error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xtgg\Form_error.Designer.cs">
+      <DependentUpon>Form_error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="xtgg\Form_printsetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xtgg\Form_printsetup.Designer.cs">
+      <DependentUpon>Form_printsetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ywsz\Form_dbclean.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ywsz\Form_dbclean.Designer.cs">
+      <DependentUpon>Form_dbclean.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ywsz\Form_findzd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ywsz\Form_findzd.Designer.cs">
+      <DependentUpon>Form_findzd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ywsz\Form_hszhxm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ywsz\Form_hszhxm.Designer.cs">
+      <DependentUpon>Form_hszhxm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ywsz\Form_jbmb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ywsz\Form_jbmb.Designer.cs">
+      <DependentUpon>Form_jbmb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ywsz\Form_nld.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ywsz\Form_nld.Designer.cs">
+      <DependentUpon>Form_nld.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ywsz\Form_sqdsx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ywsz\Form_sqdsx.Designer.cs">
+      <DependentUpon>Form_sqdsx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ywsz\Form_tjtc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ywsz\Form_tjtc.Designer.cs">
+      <DependentUpon>Form_tjtc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ywsz\Form_zdjywh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ywsz\Form_zdjywh.Designer.cs">
+      <DependentUpon>Form_zdjywh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xtgg\Printer.cs" />
+    <Compile Include="xtgg\PrinterDoc.cs" />
+    <Compile Include="xtgg\RdlcPrint.cs" />
+    <Compile Include="main\Form_about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\Form_about.Designer.cs">
+      <DependentUpon>Form_about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main\Form_changepsd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\Form_changepsd.Designer.cs">
+      <DependentUpon>Form_changepsd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main\Form_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\Form_login.Designer.cs">
+      <DependentUpon>Form_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main\MdiChildrenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\MdiChildrenForm.Designer.cs">
+      <DependentUpon>MdiChildrenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main\loginBiz.cs" />
+    <Compile Include="main\mainBiz.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="cxbb\Form_gztjb.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_gztjb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cxbb\Form_log.resx">
+      <DependentUpon>Form_log.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cxbb\Form_sftjbb.resx">
+      <DependentUpon>Form_sftjbb.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cxbb\Form_tjrstjbb.resx">
+      <DependentUpon>Form_tjrstjbb.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cxbb\Form_wsftjbb.resx">
+      <DependentUpon>Form_wsftjbb.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cxbb\Form_yxjghz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_yxjghz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cxbb\Form_tjzcqd.resx">
+      <DependentUpon>Form_tjzcqd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cxbb\Form_jbrstj.resx">
+      <DependentUpon>Form_jbrstj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cxbb\Form_jbhztj.resx">
+      <DependentUpon>Form_jbhztj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cxbb\Form_jbfbtj.resx">
+      <DependentUpon>Form_jbfbtj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cxbb\Form_zybhztj_yx.resx">
+      <DependentUpon>Form_zybhztj_yx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cxbb\Form_zyjk_tzs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_zyjk_tzs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cxbb\Form_tjjgmx.resx">
+      <DependentUpon>Form_tjjgmx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cxbb\Form_tjjgmxyx.resx">
+      <DependentUpon>Form_tjjgmxyx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cxgl\Form_ggcx.resx">
+      <DependentUpon>Form_ggcx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cxgl\Form_tjdwcx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_tjdwcx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cxgl\Form_Tjz.resx">
+      <DependentUpon>Form_Tjz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataGridViewPrint\PrintOptions.resx">
+      <DependentUpon>PrintOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataWindows\DataWindowFilter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DataWindowFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataWindows\RowMergeView.resx">
+      <DependentUpon>RowMergeView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_waiting.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_waiting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jkgl\Form_codeprint.resx">
+      <DependentUpon>Form_codeprint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jkgl\Form_codeprint_data.resx">
+      <DependentUpon>Form_codeprint_data.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jkgl\Form_gxdz.resx">
+      <DependentUpon>Form_gxdz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jkgl\Form_jgagain.resx">
+      <DependentUpon>Form_jgagain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jkgl\Form_jgdr.resx">
+      <DependentUpon>Form_jgdr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jkgl\Form_jysq.resx">
+      <DependentUpon>Form_jysq.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jkgl\Form_jyxmdz.resx">
+      <DependentUpon>Form_jyxmdz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jkgl\Form_jyxmdz_dj.resx">
+      <DependentUpon>Form_jyxmdz_dj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jkgl\Form_jyzhxmdz.resx">
+      <DependentUpon>Form_jyzhxmdz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jkgl\Form_label.resx">
+      <DependentUpon>Form_label.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jkgl\Form_previewreport.resx">
+      <DependentUpon>Form_previewreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jkgl\UCBarCode.resx">
+      <DependentUpon>UCBarCode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jkgl\Form_jyxmdz_new.resx">
+      <DependentUpon>Form_jyxmdz_new.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jyjk\Form_addJyxm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_addJyxm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jyjk\Form_jysjlr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_jysjlr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jyjk\Form_tjryxx.resx">
+      <DependentUpon>Form_tjryxx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jyjk\Form_yfbcx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_yfbcx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\About.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\Form_dh.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_dh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\Form_login_zy.resx">
+      <DependentUpon>Form_login_zy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\Form_reg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\Form_xtczy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_xtczy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\Form_xtgn.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_xtgn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\Form_xtjcsj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_xtjcsj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\Form_xtjcsjinsert.resx">
+      <DependentUpon>Form_xtjcsjinsert.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\Form_yhqxsz_sort.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_yhqxsz_sort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\Form_yhzqxsz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_yhzqxsz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\Form_yhzsz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_yhzsz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\Form_ysksqx.resx">
+      <DependentUpon>Form_ysksqx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\ZY_MainForm.resx">
+      <DependentUpon>ZY_MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\Form_login_zypc.resx">
+      <DependentUpon>Form_login_zypc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\Form_login_zycmp.resx">
+      <DependentUpon>Form_login_zycmp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rdlc\Form_report.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rdlc\Form_reportZYJKTJBG.resx">
+      <DependentUpon>Form_reportZYJKTJBG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rdlc\Report_cyjkbg.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_cyjkbg_kb.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_jcb_jbxx1.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_jcb_jbxx2.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_jcb_main.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rdlc\Report_jcjg_fm.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_jkz_foot.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_jkz_head.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_sftjbb.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjbg_zs.rdlc">
+    </EmbeddedResource>
+    <Content Include="Rdlc\Report_tjbg_zs_贺州.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Rdlc\Report_tjbg_zybzs.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjbg_zytj.rdlc">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rdlc\Report_tjsffp.rdlc" />
+    <EmbeddedResource Include="Rdlc\report_tjzhxmmx.rdlc" />
+    <EmbeddedResource Include="Rdlc\report_tjzhxmmx_zyb.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjzyd.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjzyd_zyb.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tj_gztjb.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_wsftjbb.rdlc" />
+    <Content Include="Rdlc\Report_zybhzbb_son.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Rdlc\Report_zyb_jkda.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyb_jkda_new.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rdlc\Report_zyjc_column13.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyb_cwjc_jkda.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyb_gy_fzjc.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyb_gy_fzjc2.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyb_gy_jbxx.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyb_gy_jkda.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyb_gy_tz1.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyb_gy_tz2.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyb_jbxx.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rdlc\Report_jybg_dy.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_jyjgdy.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_test.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjbg_fc.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjbg_jgjcb.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjbg_jy.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjbg_mx.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjbg_mx_gnjc.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjbg_mx_syjc2.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjbg_mx_wljc.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjbg_sy.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjsqd.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjtxm.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tj_mx.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_yxjghz.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjzcqd.rdlc" />
+    <Content Include="Rdlc\Report_jbrstj.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Rdlc\Report_jbhztj.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_jbfbtj.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjrstj.rdlc" />
+    <Content Include="Rdlc\Report_zybhzbb.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Rdlc\Report_zyb_fjxx.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyb_hyjqtjc.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyb_tljc_jbxx.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyb_tljc_jcjg.rdlc">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rdlc\Report_zyb_tz1.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyb_tz2.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyb_zysbs.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyb_zz.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rdlc\Report_zyjcjgtzs.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyjc_column10.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyjc_column11.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyjc_column12.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyjc_column14.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyjc_column15.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyjc_column16.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyjc_column17.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyjc_column8.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyjc_column9.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyjc_hzxx.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyjc_main.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyjc_main8.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyjc_tzs_column7.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zytjbg_main.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyjc_mx.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_zyb_gy_tjzdjl.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_pxz_head.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjmxjg.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjbg.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjbg_zsbg.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjbg_zs_太和.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjsqd_新桥.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjbg芳华.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjbg_zs芳华.rdlc" />
+    <EmbeddedResource Include="Rdlc\report_tjzhxmmx芳华.rdlc" />
+    <EmbeddedResource Include="Rdlc\Report_tjbg_sy芳华.rdlc" />
+    <EmbeddedResource Include="SourceGrid\DevAge.Windows.Forms\Properties\Resources.resx" />
+    <EmbeddedResource Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\ButtonMultiSelection.resx">
+      <DependentUpon>ButtonMultiSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\ColorPicker.resx">
+      <DependentUpon>ColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\DevAgeNumericUpDown.resx">
+      <DependentUpon>DevAgeNumericUpDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\DevAgeTextBoxButton.resx">
+      <DependentUpon>DevAgeTextBoxButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\DropDown.resources" />
+    <EmbeddedResource Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\DropDown.resx">
+      <DependentUpon>DropDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\DropDownButton.resx">
+      <DependentUpon>DropDownButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\EditableControlBase.resx">
+      <DependentUpon>EditableControlBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\ErrorDialog.resources" />
+    <EmbeddedResource Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\ErrorDialog.resx">
+      <DependentUpon>ErrorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\ErrorDialogDetails.resx">
+      <DependentUpon>ErrorDialogDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\ImageNavigator.resx">
+      <DependentUpon>ImageNavigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\Line.resx">
+      <DependentUpon>Line.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\LinkLabel.resx">
+      <DependentUpon>LinkLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceGrid\DevAge.Windows.Forms\Windows\Forms\TextBoxUITypeEditor.resx">
+      <DependentUpon>TextBoxUITypeEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceGrid\SourceGrid.Extensions\DataGrid.resources" />
+    <EmbeddedResource Include="SourceGrid\SourceGrid.Extensions\DataGrid.resx">
+      <DependentUpon>DataGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceGrid\SourceGrid.Extensions\ListEditor.resources" />
+    <EmbeddedResource Include="SourceGrid\SourceGrid.Extensions\ListEditor.resx">
+      <DependentUpon>ListEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceGrid\SourceGrid.Extensions\PlanningGrid.resources" />
+    <EmbeddedResource Include="SourceGrid\SourceGrid.Extensions\PlanningGrid.resx">
+      <DependentUpon>PlanningGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjdj\Form_cytjkb.resx">
+      <DependentUpon>Form_cytjkb.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjdj\Form_dwdj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_dwdj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjdj\Form_dwfz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_dwfz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjdj\Form_excel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_excel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjdj\Form_pz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_pz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjdj\Form_ryxz.resx">
+      <DependentUpon>Form_ryxz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjdj\Form_tjsf.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_tjsf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjdj\Form_tjdj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_tjdj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjdj\Form_tjdw.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_tjdw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjdj\Form_tjpldj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_tjpldj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjdj\Form_tjrqxz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_tjrqxz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjdj\Form_tjsqd.resx">
+      <DependentUpon>Form_tjsqd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjdj\Form_tjtgb.resx">
+      <DependentUpon>Form_tjtgb.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjdj\Form_tjzyd.resx">
+      <DependentUpon>Form_tjzyd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjdj\Form_tmqr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_tmqr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjdj\Form_zhxmlr.resx">
+      <DependentUpon>Form_zhxmlr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjdj\Form_lsjl.resx">
+      <DependentUpon>Form_lsjl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjdj\Form_tjtxm.resx">
+      <DependentUpon>Form_tjtxm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjdj\Form_zhxmtz.resx">
+      <DependentUpon>Form_zhxmtz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjdj\Form_tjdw1.resx">
+      <DependentUpon>Form_tjdw1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjjg\Form_zywj.resx">
+      <DependentUpon>Form_zywj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjjg\Form_dxlr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_dxlr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjjg\Form_jzlr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_jzlr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjjg\Form_mxjg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_mxjg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjjg\Form_tjbg.resx">
+      <DependentUpon>Form_tjbg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjjg\Form_tjjgckz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_tjjgckz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjjg\Form_tjrq.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_tjrq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjjg\Form_tjrqxz.resx">
+      <DependentUpon>Form_tjrqxz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjjg\Form_tycx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_tycx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjjg\Form_tzs_ly.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_tzs_ly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjjg\Form_zdlb.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_zdlb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjjg\Form_zjjl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_zjjl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjjg\Form_zyjk_tjbg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_zyjk_tjbg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjjg\Form_zywj_insert.resx">
+      <DependentUpon>Form_zywj_insert.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjjg\Form_zywj_out.resx">
+      <DependentUpon>Form_zywj_out.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\TextNumberControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TextNumberControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjjg\Form_zywj_tzjy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_zywj_tzjy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XPander\Panel.resx">
+      <DependentUpon>Panel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XPander\XPanderPanel.resx">
+      <DependentUpon>XPanderPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XPander\XPanderPanelList.resx">
+      <DependentUpon>XPanderPanelList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xtgg\Form_dbc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_dbc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xtgg\Form_dysz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_dysz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xtgg\Form_gzwhysdz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_gzwhysdz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xtgg\Form_sql.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_sql.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ywsz\Form_cjjgwh.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_cjjgwh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xtgg\Form_cssz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_cssz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xtgg\Form_error.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\Form_about.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\Form_changepsd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_changepsd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\Form_login.resx">
+      <DependentUpon>Form_login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\MdiChildrenForm.resx">
+      <DependentUpon>MdiChildrenForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xtgg\Form_printsetup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_printsetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ywsz\Form_dbclean.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_dbclean.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ywsz\Form_findzd.resx">
+      <DependentUpon>Form_findzd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ywsz\Form_hszhxm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_hszhxm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ywsz\Form_jbmb.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_jbmb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ywsz\Form_nld.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_nld.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ywsz\Form_sqdsx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_sqdsx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ywsz\Form_tjtc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_tjtc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ywsz\Form_zdjywh.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_zdjywh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ywsz\Form_lclx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_lclx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ywsz\Form_tjks.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_tjks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ywsz\Form_tjxmsz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_tjxmsz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ywsz\Form_zhxmlr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_zhxmlr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ywsz\Form_zhxmsz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_zhxmsz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ywsz\Form_zhxmxz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_zhxmxz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ywsz\Form_xmmb.resx">
+      <DependentUpon>Form_xmmb.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zybtj\Form_pxzbl.resx">
+      <DependentUpon>Form_pxzbl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zybtj\Form_jkda.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_jkda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zybtj\Form_jkzbl.resx">
+      <DependentUpon>Form_jkzbl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zybtj\Form_jkzpldy.resx">
+      <DependentUpon>Form_jkzpldy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zybtj\Form_whysxz.resx">
+      <DependentUpon>Form_whysxz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zybtj\Form_zjjl_zdjy.resx">
+      <DependentUpon>Form_zjjl_zdjy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zybtj\Form_zybwz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form_zybwz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zybtj\Form_zyb_plbgdy.resx">
+      <DependentUpon>Form_zyb_plbgdy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\Img\Langbk.jpg1" />
+    <None Include="bin\Debug\Img\main.psd" />
+    <None Include="bin\Release\skin\Eighteen\Eighteen.ssk" />
+    <None Include="bin\Release\skin\Eighteen\EighteenColor1.ssk" />
+    <None Include="bin\Release\skin\Eighteen\EighteenColor2.ssk" />
+    <None Include="bin\Release\skin\Emerald\Emerald.ssk" />
+    <None Include="bin\Release\skin\Emerald\EmeraldColor1.ssk" />
+    <None Include="bin\Release\skin\Emerald\EmeraldColor2.ssk" />
+    <None Include="bin\Release\skin\Emerald\EmeraldColor3.ssk" />
+    <None Include="bin\Release\skin\Glass\GlassBrown.ssk" />
+    <None Include="bin\Release\skin\Glass\GlassGreen.ssk" />
+    <None Include="bin\Release\skin\Glass\GlassOrange.ssk" />
+    <None Include="bin\Release\skin\Longhorn\Longhorn.ssk" />
+    <None Include="bin\Release\skin\MacOS\MacOS.ssk" />
+    <None Include="bin\Release\skin\Midsummer\Midsummer.ssk" />
+    <None Include="bin\Release\skin\Midsummer\MidsummerColor1.ssk" />
+    <None Include="bin\Release\skin\Midsummer\MidsummerColor2.ssk" />
+    <None Include="bin\Release\skin\Midsummer\MidsummerColor3.ssk" />
+    <None Include="bin\Release\skin\MP10\MP10.ssk" />
+    <None Include="bin\Release\skin\MSN\MSN.ssk" />
+    <None Include="bin\Release\skin\One\OneBlue.ssk" />
+    <None Include="bin\Release\skin\One\OneCyan.ssk" />
+    <None Include="bin\Release\skin\One\OneGreen.ssk" />
+    <None Include="bin\Release\skin\One\OneOrange.ssk" />
+    <None Include="bin\Release\skin\Page\Page.ssk" />
+    <None Include="bin\Release\skin\Page\PageColor1.ssk" />
+    <None Include="bin\Release\skin\Page\PageColor2.ssk" />
+    <None Include="bin\Release\skin\RealOne\RealOne.ssk" />
+    <None Include="bin\Release\skin\Silver\Silver.ssk" />
+    <None Include="bin\Release\skin\Silver\SilverColor1.ssk" />
+    <None Include="bin\Release\skin\Silver\SilverColor2.ssk" />
+    <None Include="bin\Release\skin\Sports\SportsBlack.ssk" />
+    <None Include="bin\Release\skin\Sports\SportsBlue.ssk" />
+    <None Include="bin\Release\skin\Sports\SportsCyan.ssk" />
+    <None Include="bin\Release\skin\Sports\SportsGreen.ssk" />
+    <None Include="bin\Release\skin\Sports\SportsOrange.ssk" />
+    <None Include="bin\Release\skin\Steel\SteelBlack.ssk" />
+    <None Include="bin\Release\skin\Steel\SteelBlue.ssk" />
+    <None Include="bin\Release\skin\Vista1\vista1.ssk" />
+    <None Include="bin\Release\skin\Vista1\vista1_green.ssk" />
+    <None Include="bin\Release\skin\Vista2\Vista2_color1.ssk" />
+    <None Include="bin\Release\skin\Vista2\Vista2_color2.ssk" />
+    <None Include="bin\Release\skin\Vista2\Vista2_color3.ssk" />
+    <None Include="bin\Release\skin\Vista2\Vista2_color4.ssk" />
+    <None Include="bin\Release\skin\Vista2\Vista2_color5.ssk" />
+    <None Include="bin\Release\skin\Vista2\Vista2_color6.ssk" />
+    <None Include="bin\Release\skin\Vista2\Vista2_color7.ssk" />
+    <None Include="bin\Release\skin\Warm\Warm.ssk" />
+    <None Include="bin\Release\skin\Warm\WarmColor1.ssk" />
+    <None Include="bin\Release\skin\Warm\WarmColor2.ssk" />
+    <None Include="bin\Release\skin\Warm\WarmColor3.ssk" />
+    <None Include="bin\Release\skin\Wave\Wave.ssk" />
+    <None Include="bin\Release\skin\Wave\WaveColor1.ssk" />
+    <None Include="bin\Release\skin\Wave\WaveColor2.ssk" />
+    <None Include="bin\Release\skin\WinXP\XPBlue.ssk" />
+    <None Include="bin\Release\skin\WinXP\XPGreen.ssk" />
+    <None Include="bin\Release\skin\WinXP\XPOrange.ssk" />
+    <None Include="bin\Release\skin\WinXP\XPSilver.ssk" />
+    <None Include="DataSetAdd.xsc">
+      <DependentUpon>DataSetAdd.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetAdd.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetAdd.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetAdd.xss">
+      <DependentUpon>DataSetAdd.xsd</DependentUpon>
+    </None>
+    <None Include="PEISDataSet1.xsc">
+      <DependentUpon>PEISDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PEISDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PEISDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PEISDataSet1.xss">
+      <DependentUpon>PEISDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PEISDataSet2.xsc">
+      <DependentUpon>PEISDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PEISDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PEISDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PEISDataSet2.xss">
+      <DependentUpon>PEISDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PEISLXDataSet.xsc">
+      <DependentUpon>PEISLXDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PEISLXDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PEISLXDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PEISLXDataSet.xss">
+      <DependentUpon>PEISLXDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PEISLXDataSet11.xsc">
+      <DependentUpon>PEISLXDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="PEISLXDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PEISLXDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PEISLXDataSet11.xss">
+      <DependentUpon>PEISLXDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="PEISLXDataSetzhz.xsc">
+      <DependentUpon>PEISLXDataSetzhz.xsd</DependentUpon>
+    </None>
+    <None Include="PEISLXDataSetzhz.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PEISLXDataSetzhz.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PEISLXDataSetzhz.xss">
+      <DependentUpon>PEISLXDataSetzhz.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="xtgg\ControlImage.cs" />
+    <Compile Include="xtgg\Resolution.cs" />
+    <Compile Include="xtgg\xtBiz.cs" />
+    <Compile Include="xtgg\RdlcPrintNew.cs" />
+    <Compile Include="xtgg\XtNumber.cs" />
+    <Compile Include="ywsz\Form_lclx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ywsz\Form_lclx.Designer.cs">
+      <DependentUpon>Form_lclx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ywsz\Form_tjks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ywsz\Form_tjks.Designer.cs">
+      <DependentUpon>Form_tjks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ywsz\Form_tjxmsz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ywsz\Form_tjxmsz.Designer.cs">
+      <DependentUpon>Form_tjxmsz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ywsz\Form_zhxmlr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ywsz\Form_zhxmlr.Designer.cs">
+      <DependentUpon>Form_zhxmlr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ywsz\Form_zhxmsz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ywsz\Form_zhxmsz.Designer.cs">
+      <DependentUpon>Form_zhxmsz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ywsz\Form_zhxmxz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ywsz\Form_zhxmxz.Designer.cs">
+      <DependentUpon>Form_zhxmxz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ywsz\MyListViewItem.cs" />
+    <Compile Include="ywsz\MyTreeNode.cs" />
+    <Compile Include="ywsz\ywszBiz.cs" />
+    <Compile Include="ywsz\Form_xmmb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ywsz\Form_xmmb.Designer.cs">
+      <DependentUpon>Form_xmmb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zybtj\Form_pxzbl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zybtj\Form_pxzbl.Designer.cs">
+      <DependentUpon>Form_pxzbl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zybtj\Form_jkda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zybtj\Form_jkda.Designer.cs">
+      <DependentUpon>Form_jkda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zybtj\Form_jkzbl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zybtj\Form_jkzbl.Designer.cs">
+      <DependentUpon>Form_jkzbl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zybtj\Form_jkzpldy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zybtj\Form_jkzpldy.Designer.cs">
+      <DependentUpon>Form_jkzpldy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zybtj\Form_whysxz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zybtj\Form_whysxz.Designer.cs">
+      <DependentUpon>Form_whysxz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zybtj\Form_zjjl_zdjy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zybtj\Form_zjjl_zdjy.Designer.cs">
+      <DependentUpon>Form_zjjl_zdjy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zybtj\Form_zybwz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zybtj\Form_zybwz.Designer.cs">
+      <DependentUpon>Form_zybwz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zybtj\Form_zyb_plbgdy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zybtj\Form_zyb_plbgdy.Designer.cs">
+      <DependentUpon>Form_zyb_plbgdy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zybtj\GgwsTjzm.cs" />
+    <Compile Include="zybtj\TjGyzz.cs" />
+    <Compile Include="zybtj\TjGyzzBiz.cs" />
+    <Compile Include="zybtj\TjZybGqf.cs" />
+    <Compile Include="zybtj\TjZybGqfBiz.cs" />
+    <Compile Include="zybtj\TjZybRyxx.cs" />
+    <Compile Include="zybtj\TjZybRyxxBiz.cs" />
+    <Compile Include="zybtj\TjZybZys.cs" />
+    <Compile Include="zybtj\TjZybZysBiz.cs" />
+    <Compile Include="zybtj\TjZybZz.cs" />
+    <Compile Include="zybtj\TjZybZzBiz.cs" />
+    <Compile Include="zybtj\ZyjkdaBiz.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\main.jpg" />
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Office">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>99</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Excel\单位体检人员名单导入标准样式.xls" />
+    <None Include="Img\rectangl.png" />
+    <None Include="Img\登录.bmp" />
+    <None Include="PEISDataSet.xsc">
+      <DependentUpon>PEISDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PEISDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PEISDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PEISDataSet.xss">
+      <DependentUpon>PEISDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Rdlc\EF.Reverse.POCO.Core.ttinclude" />
+    <None Include="Rdlc\EF.Reverse.POCO.ttinclude" />
+    <None Include="SourceGrid\DevAge.Windows.Forms\Drawing\VisualElements\VisualElements.cd" />
+    <None Include="SourceGrid\DevAgeSourcePack4\ComponentModel\Validator\ValidatorDiagram.cd" />
+    <None Include="SourceGrid\SourceGrid.shfbproj" />
+    <None Include="SourceGrid\SourceGrid\SourceGrid.snk" />
+    <None Include="update.config" />
+    <Content Include="bin\Debug\Img\a.bmp" />
+    <Content Include="bin\Debug\Img\b.bmp" />
+    <Content Include="bin\Debug\Img\c.bmp" />
+    <Content Include="bin\Debug\Img\chevron_down.png" />
+    <Content Include="bin\Debug\Img\chevron_up.png" />
+    <Content Include="bin\Debug\Img\d.bmp" />
+    <Content Include="bin\Debug\Img\e.bmp" />
+    <Content Include="bin\Debug\Img\excel.ico" />
+    <Content Include="bin\Debug\Img\HIS.ICO" />
+    <Content Include="bin\Debug\Img\ico.ico" />
+    <Content Include="bin\Debug\Img\jgwhsm.png" />
+    <Content Include="bin\Debug\Img\j上.bmp" />
+    <Content Include="bin\Debug\Img\j下.bmp" />
+    <Content Include="bin\Debug\Img\j右.bmp" />
+    <Content Include="bin\Debug\Img\j右上.bmp" />
+    <Content Include="bin\Debug\Img\j右下.bmp" />
+    <Content Include="bin\Debug\Img\j左.bmp" />
+    <Content Include="bin\Debug\Img\j左上.bmp" />
+    <Content Include="bin\Debug\Img\j左下.bmp" />
+    <Content Include="bin\Debug\Img\Langbk.jpg" />
+    <Content Include="bin\Debug\Img\log.jpg" />
+    <Content Include="bin\Debug\Img\main.jpg" />
+    <Content Include="bin\Debug\Img\mainback.jpg" />
+    <Content Include="bin\Debug\Img\rectangl.png" />
+    <Content Include="bin\Debug\Img\shortcut.png" />
+    <Content Include="bin\Debug\Img\talk.ico" />
+    <Content Include="bin\Debug\Img\tc.jpg" />
+    <Content Include="bin\Debug\Img\uninstall.ico" />
+    <Content Include="bin\Debug\Img\zbdy.gif" />
+    <Content Include="bin\Debug\Img\zhxm.jpg" />
+    <Content Include="bin\Debug\Img\ZYBG_Top.png" />
+    <Content Include="bin\Debug\Img\个人数据导出.jpg" />
+    <Content Include="bin\Debug\Img\体质辨识矢量表.jpg" />
+    <Content Include="bin\Debug\Img\停用.gif" />
+    <Content Include="bin\Debug\Img\关闭节点.ico" />
+    <Content Include="bin\Debug\Img\医院徽标 - 副本.bmp" />
+    <Content Include="bin\Debug\Img\医院徽标.bmp" />
+    <Content Include="bin\Debug\Img\单位分组.jpg" />
+    <Content Include="bin\Debug\Img\启用.gif" />
+    <Content Include="bin\Debug\Img\复件 Langbk.jpg" />
+    <Content Include="bin\Debug\Img\复查通知.jpg" />
+    <Content Include="bin\Debug\Img\套餐.bmp" />
+    <Content Include="bin\Debug\Img\导航.jpg" />
+    <Content Include="bin\Debug\Img\展开节点.ico" />
+    <Content Include="bin\Debug\Img\开始辨识.png" />
+    <Content Include="bin\Debug\Img\微信.png" />
+    <Content Include="bin\Debug\Img\打印体检报告.jpg" />
+    <Content Include="bin\Debug\Img\报告查询.png" />
+    <Content Include="bin\Debug\Img\登录.bmp" />
+    <Content Include="bin\Debug\Img\空白头像.jpg" />
+    <Content Include="bin\Debug\Img\组合.bmp" />
+    <Content Include="bin\Debug\Img\维护单位.bmp" />
+    <Content Include="bin\Debug\Img\蒙藏医体质识别系统.jpg" />
+    <Content Include="bin\Debug\Img\进度条1.gif" />
+    <Content Include="bin\Debug\Img\退出.png" />
+    <Content Include="bin\Debug\Img\集中录入数据.jpg" />
+    <Content Include="bin\Debug\Img\项目.bmp" />
+    <Content Include="bin\Release\skin\Eighteen\eighteen.gif" />
+    <Content Include="bin\Release\skin\Eighteen\eighteen_color1.gif" />
+    <Content Include="bin\Release\skin\Eighteen\eighteen_color2.gif" />
+    <Content Include="bin\Release\skin\Emerald\emerald.gif" />
+    <Content Include="bin\Release\skin\Emerald\emerald_color1.gif" />
+    <Content Include="bin\Release\skin\Emerald\emerald_color2.gif" />
+    <Content Include="bin\Release\skin\Emerald\emerald_color3.gif" />
+    <Content Include="bin\Release\skin\Glass\glassbrown.gif" />
+    <Content Include="bin\Release\skin\Glass\glassgreen.gif" />
+    <Content Include="bin\Release\skin\Glass\glassorange.gif" />
+    <Content Include="bin\Release\skin\Longhorn\longhorn.gif" />
+    <Content Include="bin\Release\skin\MacOS\macos.gif" />
+    <Content Include="bin\Release\skin\Midsummer\midsummer.gif" />
+    <Content Include="bin\Release\skin\Midsummer\midsummer_color1.gif" />
+    <Content Include="bin\Release\skin\Midsummer\midsummer_color2.gif" />
+    <Content Include="bin\Release\skin\Midsummer\midsummer_color3.gif" />
+    <Content Include="bin\Release\skin\MP10\mp10.gif" />
+    <Content Include="bin\Release\skin\MSN\msn.gif" />
+    <Content Include="bin\Release\skin\One\oneblue.gif" />
+    <Content Include="bin\Release\skin\One\onecyan.gif" />
+    <Content Include="bin\Release\skin\One\onegreen.gif" />
+    <Content Include="bin\Release\skin\One\oneorange.gif" />
+    <Content Include="bin\Release\skin\Page\page.gif" />
+    <Content Include="bin\Release\skin\Page\page_color1.gif" />
+    <Content Include="bin\Release\skin\Page\page_color2.gif" />
+    <Content Include="bin\Release\skin\RealOne\realone.gif" />
+    <Content Include="bin\Release\skin\Silver\silver.gif" />
+    <Content Include="bin\Release\skin\Silver\silver_color1.gif" />
+    <Content Include="bin\Release\skin\Silver\silver_color2.gif" />
+    <Content Include="bin\Release\skin\Sports\sportsblack.gif" />
+    <Content Include="bin\Release\skin\Sports\sportsblue.gif" />
+    <Content Include="bin\Release\skin\Sports\sportscyan.gif" />
+    <Content Include="bin\Release\skin\Sports\sportsgreen.gif" />
+    <Content Include="bin\Release\skin\Sports\sportsorange.gif" />
+    <Content Include="bin\Release\skin\Steel\steelblack.gif" />
+    <Content Include="bin\Release\skin\Steel\steelblue.gif" />
+    <Content Include="bin\Release\skin\Vista1\vista1.gif" />
+    <Content Include="bin\Release\skin\Vista1\vista1_green.gif" />
+    <Content Include="bin\Release\skin\Vista2\vista2_color1.gif" />
+    <Content Include="bin\Release\skin\Vista2\vista2_color2.gif" />
+    <Content Include="bin\Release\skin\Vista2\vista2_color3.gif" />
+    <Content Include="bin\Release\skin\Vista2\vista2_color4.gif" />
+    <Content Include="bin\Release\skin\Vista2\vista2_color5.gif" />
+    <Content Include="bin\Release\skin\Vista2\vista2_color6.gif" />
+    <Content Include="bin\Release\skin\Vista2\vista2_color7.gif" />
+    <Content Include="bin\Release\skin\Warm\warm.gif" />
+    <Content Include="bin\Release\skin\Warm\warm_color1.gif" />
+    <Content Include="bin\Release\skin\Warm\warm_color2.gif" />
+    <Content Include="bin\Release\skin\Warm\warm_color3.gif" />
+    <Content Include="bin\Release\skin\Wave\wave.gif" />
+    <Content Include="bin\Release\skin\Wave\wave_color1.gif" />
+    <Content Include="bin\Release\skin\Wave\wave_color2.gif" />
+    <Content Include="bin\Release\skin\WinXP\xpblue.gif" />
+    <Content Include="bin\Release\skin\WinXP\xpgreen.gif" />
+    <Content Include="bin\Release\skin\WinXP\xporange.gif" />
+    <Content Include="bin\Release\skin\WinXP\xpsilver.gif" />
+    <Content Include="bin\Release\华视DLL\sdtapi.dll" />
+    <Content Include="bin\Release\华视DLL\termb.dll" />
+    <Content Include="bin\Release\华视DLL\UnPack.dll" />
+    <Content Include="bin\Release\国腾DLL\termb.dll" />
+    <Content Include="bin\Release\国腾DLL\WltRS.dll" />
+    <Content Include="bin\Release\新中新DLL\sdtapi.dll" />
+    <Content Include="bin\Release\新中新DLL\SynIDCardAPI.dll" />
+    <Content Include="bin\Release\新中新DLL\Syn_IDCardRead.dll" />
+    <Content Include="bin\Release\新中新DLL\WltRS.dll" />
+    <Content Include="bin\Release\神思DLL\RdCard.dll" />
+    <Content Include="bin\Release\神思DLL\sdtapi.dll" />
+    <Content Include="bin\Release\神思DLL\WltRS.dll" />
+    <Content Include="Dll\BarCode.dll" />
+    <Content Include="Dll\Encrypt.dll" />
+    <Content Include="Dll\IrisSkin2.dll" />
+    <Content Include="HIS.ICO" />
+    <Content Include="SourceGrid\DevAge.Windows.Forms\Res\DropDown.ico" />
+    <Content Include="SourceGrid\DevAge.Windows.Forms\Res\left.cur" />
+    <Content Include="SourceGrid\DevAge.Windows.Forms\Res\right.cur" />
+    <Content Include="SourceGrid\DevAge.Windows.Forms\Res\SortDown.ico" />
+    <Content Include="SourceGrid\DevAge.Windows.Forms\Res\SortUp.ico" />
+    <Content Include="SourceGrid\SourceGrid.csproj" />
+    <Content Include="SourceGrid\SourceGrid.csproj.user" />
+    <Content Include="SourceGrid\SourceGrid.Extensions\Res\Add.ico" />
+    <Content Include="SourceGrid\SourceGrid.Extensions\Res\ArrowDown.ICO" />
+    <Content Include="SourceGrid\SourceGrid.Extensions\Res\ArrowUp.ICO" />
+    <Content Include="SourceGrid\SourceGrid.Extensions\Res\Delete.ICO" />
+    <Content Include="SourceGrid\SourceGrid.Extensions\Res\Refresh.ico" />
+    <Content Include="SourceGrid\SourceGrid.License.txt" />
+    <Content Include="SourceGrid\SourceGrid\Grid.bmp" />
+    <Content Include="SourceGrid\SourceGrid\GridVirtual.bmp" />
+    <Content Include="SourceGrid\SourceGrid\SourceGrid.csproj" />
+    <Content Include="桌面图标.ico" />
+    <None Include="Img\进度条1.gif" />
+    <None Include="Img\tc.jpg" />
+    <None Include="Img\zhxm.jpg" />
+    <None Include="Img\导航.jpg" />
+    <None Include="Img\维护单位.bmp" />
+    <None Include="Img\chevron_up.png" />
+    <None Include="Img\chevron_down.png" />
+    <None Include="Img\jgwhsm.png" />
+    <None Include="Img\mainback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BarCodeControl\BarcodeLib.csproj">
+      <Project>{bc2d02cf-9588-4248-b731-da1a470b36ff}</Project>
+      <Name>BarcodeLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\rdlcreport\" />
+    <Folder Include="bin\Release\Img\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

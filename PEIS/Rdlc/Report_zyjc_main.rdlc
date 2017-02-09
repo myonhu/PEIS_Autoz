@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <Body>
+    <ReportItems>
+      <Rectangle Name="rectangle2">
+        <ReportItems>
+          <Subreport Name="subreport2">
+            <ReportName>Report_zyjc_hzxx</ReportName>
+            <Parameters>
+              <Parameter Name="gzjwhys">
+                <Value>=Parameters!gzjwhys.Value</Value>
+              </Parameter>
+              <Parameter Name="tjrq">
+                <Value>=Parameters!tjrq.Value</Value>
+              </Parameter>
+              <Parameter Name="rqdx">
+                <Value>=Parameters!bgrqdx.Value</Value>
+              </Parameter>
+              <Parameter Name="rownum">
+                <Value>=Parameters!rownum.Value</Value>
+              </Parameter>
+              <Parameter Name="page1">
+                <Value>=Parameters!page1.Value</Value>
+              </Parameter>
+              <Parameter Name="page2">
+                <Value>=Parameters!page2.Value</Value>
+              </Parameter>
+              <Parameter Name="page3">
+                <Value>=Parameters!page3.Value</Value>
+              </Parameter>
+              <Parameter Name="page4">
+                <Value>=Parameters!page4.Value</Value>
+              </Parameter>
+              <Parameter Name="page5">
+                <Value>=Parameters!page5.Value</Value>
+              </Parameter>
+              <Parameter Name="page6">
+                <Value>=Parameters!page6.Value</Value>
+              </Parameter>
+              <Parameter Name="page7">
+                <Value>=Parameters!page7.Value</Value>
+              </Parameter>
+              <Parameter Name="page8">
+                <Value>=Parameters!page8.Value</Value>
+              </Parameter>
+              <Parameter Name="page9">
+                <Value>=Parameters!page9.Value</Value>
+              </Parameter>
+              <Parameter Name="page10">
+                <Value>=Parameters!page10.Value</Value>
+              </Parameter>
+            </Parameters>
+            <KeepTogether>true</KeepTogether>
+            <Height>1.5cm</Height>
+            <Width>28cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+          </Subreport>
+        </ReportItems>
+        <PageBreak>
+          <BreakLocation>End</BreakLocation>
+        </PageBreak>
+        <DataElementOutput>ContentsOnly</DataElementOutput>
+        <Height>1.5cm</Height>
+        <Width>28cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+      </Rectangle>
+    </ReportItems>
+    <Height>1.5cm</Height>
+    <Style />
+  </Body>
+  <ReportParameters>
+    <ReportParameter Name="dwmc">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_0</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="tjrq">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_2</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="bgrqdx">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_4</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="gzjwhys">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_3</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ys">
+      <DataType>Integer</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_4</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="rownum">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_5</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="page1">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_6</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="page2">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_7</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="page3">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_8</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="page4">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_9</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="page5">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_10</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="page6">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_11</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="page7">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_12</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="page8">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_13</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="page9">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_14</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="page10">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_15</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Width>28cm</Width>
+  <Page>
+    <PageFooter>
+      <Height>2.75cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="textbox1">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>="第" &amp; Globals!PageNumber &amp; "页/共" &amp; Globals!TotalPages &amp; "页"</Value>
+                  <Style>
+                    <FontFamily>宋体</FontFamily>
+                    <FontSize>16pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>textbox1</rd:DefaultName>
+          <Top>2cm</Top>
+          <Height>0.75cm</Height>
+          <Width>28cm</Width>
+          <Style>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="textbox17">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=IIF(Globals!PageNumber= Globals!TotalPages,Parameters!bgrqdx.Value,"")</Value>
+                  <Style>
+                    <FontFamily>仿宋_GB2312</FontFamily>
+                    <FontSize>16pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <Top>0.75cm</Top>
+          <Left>15cm</Left>
+          <Height>0.75cm</Height>
+          <Width>13cm</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="textbox16">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=IIF(Globals!PageNumber= Globals!TotalPages,"成都铁路局疾病预防控制中心附属门诊部","")</Value>
+                  <Style>
+                    <FontFamily>仿宋_GB2312</FontFamily>
+                    <FontSize>16pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <Left>15cm</Left>
+          <Height>0.75cm</Height>
+          <Width>13cm</Width>
+          <ZIndex>2</ZIndex>
+          <Style>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style />
+    </PageFooter>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2.5cm</LeftMargin>
+    <RightMargin>2.5cm</RightMargin>
+    <TopMargin>2.5cm</TopMargin>
+    <BottomMargin>2.5cm</BottomMargin>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <Language>zh-CN</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportID>3d7a1c49-f9bd-4ea6-a071-c19b8ab4c4b7</rd:ReportID>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+</Report>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="PEISConnectionString">
+      <ConnectionProperties>
+        <ConnectString>Data Source=73BCB51AB08A4AF;Initial Catalog=PEISct;Persist Security Info=True;User ID=sa;Password=</ConnectString>
+        <DataProvider>SQL</DataProvider>
+      </ConnectionProperties>
+      <rd:DataSourceID>80f2da31-69e6-4731-afef-7b72040a1bd4</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <BottomMargin>2.5cm</BottomMargin>
+  <RightMargin>2.5cm</RightMargin>
+  <PageWidth>21cm</PageWidth>
+  <ReportParameters>
+    <ReportParameter Name="bgsj">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_0</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="dwmc">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="tjrq">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_2</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="zrs">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_3</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Subreport Name="subreport1">
+        <ReportName>Report_zyjc_column10</ReportName>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+      </Subreport>
+    </ReportItems>
+    <Height>1cm</Height>
+  </Body>
+  <PageHeader>
+    <ReportItems>
+      <Textbox Name="textbox15">
+        <Left>11.75cm</Left>
+        <Top>1cm</Top>
+        <rd:DefaultName>textbox15</rd:DefaultName>
+        <ZIndex>3</ZIndex>
+        <Width>7.25cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Value>="体检人数：" &amp; Parameters!zrs.Value &amp; "人"</Value>
+      </Textbox>
+      <Textbox Name="textbox2">
+        <Top>1cm</Top>
+        <rd:DefaultName>textbox2</rd:DefaultName>
+        <ZIndex>2</ZIndex>
+        <Width>11.5cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Value>="受检单位：" &amp; Parameters!dwmc.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox1">
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <FontWeight>700</FontWeight>
+          <FontSize>14pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>1cm</Height>
+        <Value>职  业  健  康  检  查  结  果  通  知  书</Value>
+      </Textbox>
+      <Textbox Name="textbox3">
+        <Left>19.25cm</Left>
+        <Top>1cm</Top>
+        <rd:DefaultName>textbox3</rd:DefaultName>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Value>="受检时间：" &amp; Parameters!tjrq.Value</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>1.63492cm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+  </PageHeader>
+  <rd:ReportID>958dc5ed-8f2e-40b9-b442-d373ce8d6bb6</rd:ReportID>
+  <LeftMargin>2.5cm</LeftMargin>
+  <DataSets>
+    <DataSet Name="PEISDataSet_v_jgtzs">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>PEISDataSet</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>v_jgtzsTableAdapter</rd:TableAdapterName>
+        <rd:TableName>v_jgtzs</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT dwmc, dwbh, tjrq, tjbh, tjcs, xm, xb, nl, gz, rylb, dhqk, jsgl, jy, sumover, zs FROM v_jgtzs</CommandText>
+        <DataSourceName>PEISConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="dwmc">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>dwmc</DataField>
+        </Field>
+        <Field Name="dwbh">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>dwbh</DataField>
+        </Field>
+        <Field Name="tjrq">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>tjrq</DataField>
+        </Field>
+        <Field Name="tjbh">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>tjbh</DataField>
+        </Field>
+        <Field Name="tjcs">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>tjcs</DataField>
+        </Field>
+        <Field Name="xm">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>xm</DataField>
+        </Field>
+        <Field Name="xb">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>xb</DataField>
+        </Field>
+        <Field Name="nl">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>nl</DataField>
+        </Field>
+        <Field Name="gz">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>gz</DataField>
+        </Field>
+        <Field Name="rylb">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>rylb</DataField>
+        </Field>
+        <Field Name="dhqk">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>dhqk</DataField>
+        </Field>
+        <Field Name="zgl">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>zgl</DataField>
+        </Field>
+        <Field Name="zhmc">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>zhmc</DataField>
+        </Field>
+        <Field Name="xj">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>xj</DataField>
+        </Field>
+        <Field Name="sumover">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>sumover</DataField>
+        </Field>
+        <Field Name="jsgl">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>jsgl</DataField>
+        </Field>
+        <Field Name="zs">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>zs</DataField>
+        </Field>
+        <Field Name="jy">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>jy</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Width>28cm</Width>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <Language>zh-CN</Language>
+  <PageFooter>
+    <ReportItems>
+      <Textbox Name="textbox4">
+        <Left>1cm</Left>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Value>="制表人：　　　　　　　复核人：　　　　　　审核人：　　　　　成都铁路局疾病预防控制所  　　　　　　　　　报告时间：" &amp; Parameters!bgsj.Value</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>0.63492cm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+  </PageFooter>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

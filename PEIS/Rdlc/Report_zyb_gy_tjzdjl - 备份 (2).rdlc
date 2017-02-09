@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <BottomMargin>2.5cm</BottomMargin>
+  <RightMargin>2.5cm</RightMargin>
+  <PageWidth>21cm</PageWidth>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Textbox Name="textbox8">
+        <Left>0.75cm</Left>
+        <Top>1.5cm</Top>
+        <ZIndex>24</ZIndex>
+        <Width>3.75cm</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>神经精神科    诊断：</Value>
+      </Textbox>
+      <Textbox Name="textbox2">
+        <Left>0.5cm</Left>
+        <Top>0.4cm</Top>
+        <rd:DefaultName>textbox2</rd:DefaultName>
+        <ZIndex>23</ZIndex>
+        <Width>6cm</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <FontSize>12pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>五、体检诊断与鉴定结论</Value>
+      </Textbox>
+      <Line Name="line2">
+        <Left>0.5cm</Left>
+        <Top>1.23239cm</Top>
+        <ZIndex>22</ZIndex>
+        <Width>16cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <Height>0cm</Height>
+      </Line>
+      <Line Name="line3">
+        <Left>0.5cm</Left>
+        <Top>4.34709cm</Top>
+        <ZIndex>21</ZIndex>
+        <Width>16cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <Height>0cm</Height>
+      </Line>
+      <Line Name="line12">
+        <Left>0.5cm</Left>
+        <Top>16.80589cm</Top>
+        <ZIndex>20</ZIndex>
+        <Width>16cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <Height>0cm</Height>
+      </Line>
+      <Line Name="line14">
+        <Left>0.5cm</Left>
+        <Top>19.92059cm</Top>
+        <ZIndex>19</ZIndex>
+        <Width>16cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <Height>0cm</Height>
+      </Line>
+      <Line Name="line24">
+        <Left>0.5cm</Left>
+        <Top>26.14999cm</Top>
+        <ZIndex>18</ZIndex>
+        <Width>16cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <Height>0cm</Height>
+      </Line>
+      <Line Name="line22">
+        <Left>0.5cm</Left>
+        <Top>1.23239cm</Top>
+        <ZIndex>17</ZIndex>
+        <Width>0cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <Height>24.91761cm</Height>
+      </Line>
+      <Line Name="line23">
+        <Left>16.5cm</Left>
+        <Top>1.23239cm</Top>
+        <ZIndex>16</ZIndex>
+        <Width>0cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <Height>24.91761cm</Height>
+      </Line>
+      <Line Name="line25">
+        <Left>0.5cm</Left>
+        <Top>7.46179cm</Top>
+        <ZIndex>15</ZIndex>
+        <Width>16cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <Height>0cm</Height>
+      </Line>
+      <Line Name="line31">
+        <Left>0.5cm</Left>
+        <Top>10.57649cm</Top>
+        <ZIndex>14</ZIndex>
+        <Width>16cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <Height>0cm</Height>
+      </Line>
+      <Line Name="line32">
+        <Left>0.5cm</Left>
+        <Top>13.69119cm</Top>
+        <ZIndex>13</ZIndex>
+        <Width>16cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <Height>0cm</Height>
+      </Line>
+      <Textbox Name="textbox1">
+        <Left>1.25cm</Left>
+        <Top>3.5cm</Top>
+        <ZIndex>12</ZIndex>
+        <Width>5.5cm</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>结论：　　　　体检医师(签名)：</Value>
+      </Textbox>
+      <Textbox Name="textbox3">
+        <Left>0.75cm</Left>
+        <Top>4.5cm</Top>
+        <ZIndex>11</ZIndex>
+        <Width>3.75cm</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>内　　　科    诊断：</Value>
+      </Textbox>
+      <Textbox Name="textbox4">
+        <Left>1.25cm</Left>
+        <Top>6.75cm</Top>
+        <ZIndex>10</ZIndex>
+        <Width>5.5cm</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>结论：　　　　体检医师(签名)：</Value>
+      </Textbox>
+      <Textbox Name="textbox5">
+        <Left>0.75cm</Left>
+        <Top>7.75cm</Top>
+        <ZIndex>9</ZIndex>
+        <Width>3.75cm</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>外　　　科    诊断：</Value>
+      </Textbox>
+      <Textbox Name="textbox6">
+        <Left>1.25cm</Left>
+        <Top>9.75cm</Top>
+        <ZIndex>8</ZIndex>
+        <Width>5.5cm</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>结论：　　　　体检医师(签名)：</Value>
+      </Textbox>
+      <Textbox Name="textbox7">
+        <Left>0.75cm</Left>
+        <Top>10.75cm</Top>
+        <ZIndex>7</ZIndex>
+        <Width>3.75cm</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>眼　　　科    诊断：</Value>
+      </Textbox>
+      <Textbox Name="textbox9">
+        <Left>1.25cm</Left>
+        <Top>13cm</Top>
+        <ZIndex>6</ZIndex>
+        <Width>5.5cm</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>结论：　　　　体检医师(签名)：</Value>
+      </Textbox>
+      <Textbox Name="textbox10">
+        <Left>0.75cm</Left>
+        <Top>14cm</Top>
+        <ZIndex>5</ZIndex>
+        <Width>3.75cm</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>耳鼻咽喉科    诊断：</Value>
+      </Textbox>
+      <Textbox Name="textbox11">
+        <Left>1.25cm</Left>
+        <Top>16cm</Top>
+        <ZIndex>4</ZIndex>
+        <Width>5.5cm</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>结论：　　　　体检医师(签名)：</Value>
+      </Textbox>
+      <Textbox Name="textbox12">
+        <Left>0.75cm</Left>
+        <Top>17cm</Top>
+        <ZIndex>3</ZIndex>
+        <Width>3.75cm</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>妇　　　科    诊断：</Value>
+      </Textbox>
+      <Textbox Name="textbox13">
+        <Left>1.25cm</Left>
+        <Top>19.25cm</Top>
+        <ZIndex>2</ZIndex>
+        <Width>5.5cm</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>结论：　　　　体检医师(签名)：</Value>
+      </Textbox>
+      <Textbox Name="textbox14">
+        <Left>0.75cm</Left>
+        <Top>20.25cm</Top>
+        <ZIndex>1</ZIndex>
+        <Width>3.75cm</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>体检诊断：</Value>
+      </Textbox>
+      <Textbox Name="textbox15">
+        <Left>1.25cm</Left>
+        <Top>22.25cm</Top>
+        <Width>5.5cm</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>总结论：　　　体检医师(签名)：</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>26.3cm</Height>
+  </Body>
+  <rd:ReportID>ec22f15f-829c-4684-9763-6529bbd8d27b</rd:ReportID>
+  <LeftMargin>2.5cm</LeftMargin>
+  <Width>17cm</Width>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <Language>zh-CN</Language>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

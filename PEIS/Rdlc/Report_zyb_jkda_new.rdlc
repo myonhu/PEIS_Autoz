@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <DataSources>
+    <DataSource Name="PEISConnectionString">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=73BCB51AB08A4AF\MARSZ;Initial Catalog=PEIS;Persist Security Info=True;User ID=sa;Password=</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>befae37b-6c98-4683-b1b3-2fddcf5ae694</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="PEISDataSet_v_tj_zyb_ryxx">
+      <Fields>
+        <Field Name="hyzk">
+          <DataField>hyzk</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="tjbh">
+          <DataField>tjbh</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="tjcs">
+          <DataField>tjcs</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="xm">
+          <DataField>xm</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="xmmc">
+          <DataField>xmmc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="sfzh">
+          <DataField>sfzh</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="csnyr">
+          <DataField>csnyr</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="dw">
+          <DataField>dw</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="dwdh">
+          <DataField>dwdh</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="gh">
+          <DataField>gh</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="bh">
+          <DataField>bh</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="tbrq">
+          <DataField>tbrq</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="lx">
+          <DataField>lx</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="jws">
+          <DataField>jws</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="bm">
+          <DataField>bm</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="zdrq">
+          <DataField>zdrq</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="zddw">
+          <DataField>zddw</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="sfqy">
+          <DataField>sfqy</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ccnl">
+          <DataField>ccnl</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="jq">
+          <DataField>jq</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="zq">
+          <DataField>zq</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="tjnl">
+          <DataField>tjnl</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="xyzn">
+          <DataField>xyzn</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="lccs">
+          <DataField>lccs</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="zccs">
+          <DataField>zccs</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="sccs">
+          <DataField>sccs</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="yctc">
+          <DataField>yctc</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="sfxy">
+          <DataField>sfxy</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="xyns">
+          <DataField>xyns</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="sfyj">
+          <DataField>sfyj</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="yjsl">
+          <DataField>yjsl</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="yjsj">
+          <DataField>yjsj</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="qt">
+          <DataField>qt</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="jtbs">
+          <DataField>jtbs</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="dwdz">
+          <DataField>dwdz</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="gz">
+          <DataField>gz</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ygzdwjgz">
+          <DataField>ygzdwjgz</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="zybwhjcs">
+          <DataField>zybwhjcs</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="mingcheng">
+          <DataField>mingcheng</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="mzmc">
+          <DataField>mzmc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="hy">
+          <DataField>hy</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="zyjcs">
+          <DataField>zyjcs</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="lcbx">
+          <DataField>lcbx</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="xysjcjg">
+          <DataField>xysjcjg</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="zdbz">
+          <DataField>zdbz</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="zdjl">
+          <DataField>zdjl</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="clyj">
+          <DataField>clyj</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="wjh">
+          <DataField>wjh</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="zgl">
+          <DataField>zgl</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="jsgl">
+          <DataField>jsgl</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="xysl">
+          <DataField>xysl</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="dhqk">
+          <DataField>dhqk</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>PEISConnectionString</DataSourceName>
+        <CommandText>SELECT hyzk, tjbh, tjcs, xm, xmmc, sfzh, csnyr, dw, dwdh, gh, bh, tbrq, lx, jws, bm, zdrq, zddw, sfqy, ccnl, jq, zq, tjnl, xyzn, lccs, zccs, sccs, yctc, sfxy, xyns, sfyj, yjsl, yjsj, qt, jtbs, dwdz, gz, ygzdwjgz, zybwhjcs, mingcheng, mzmc, hy, zyjcs, lcbx, xysjcjg, zdbz, zdjl, clyj, wjh, zgl, jsgl, xysl, dhqk FROM dbo.v_tj_zyb_ryxx</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>PEISDataSet</rd:DataSetName>
+        <rd:TableName>v_tj_zyb_ryxx</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>v_tj_zyb_ryxxTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Body>
+    <ReportItems>
+      <Rectangle Name="rectangle1">
+        <ReportItems>
+          <Subreport Name="subreport1">
+            <ReportName>Report_zyb_jbxx</ReportName>
+            <Parameters>
+              <Parameter Name="title">
+                <Value>=Parameters!title.Value</Value>
+              </Parameter>
+              <Parameter Name="bbmc">
+                <Value>=Parameters!bbmc.Value</Value>
+              </Parameter>
+              <Parameter Name="barcode">
+                <Value>=Parameters!barcode.Value</Value>
+              </Parameter>
+              <Parameter Name="dz">
+                <Value>=Parameters!dz.Value</Value>
+              </Parameter>
+              <Parameter Name="dh">
+                <Value>=Parameters!dh.Value</Value>
+              </Parameter>
+              <Parameter Name="lxr">
+                <Value>=Parameters!lxr.Value</Value>
+              </Parameter>
+              <Parameter Name="zgbh">
+                <Value>=Parameters!zgbh.Value</Value>
+              </Parameter>
+            </Parameters>
+            <KeepTogether>true</KeepTogether>
+            <Height>1.5cm</Height>
+            <Width>17cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+          </Subreport>
+          <Rectangle Name="rectangle2">
+            <ReportItems>
+              <Subreport Name="subreport6">
+                <ReportName>Report_zyb_fjxx</ReportName>
+                <Parameters>
+                  <Parameter Name="dqrq">
+                    <Value>=Parameters!dqrq.Value</Value>
+                  </Parameter>
+                </Parameters>
+                <KeepTogether>true</KeepTogether>
+                <Height>1.5cm</Height>
+                <Width>17cm</Width>
+                <Style>
+                  <FontFamily>宋体</FontFamily>
+                </Style>
+              </Subreport>
+              <Rectangle Name="rectangle6">
+                <ReportItems>
+                  <Subreport Name="subreport5">
+                    <ReportName>Report_zyb_tz2</ReportName>
+                    <KeepTogether>true</KeepTogether>
+                    <Height>1.25cm</Height>
+                    <Width>17cm</Width>
+                    <Style>
+                      <Border />
+                      <FontFamily>宋体</FontFamily>
+                    </Style>
+                  </Subreport>
+                </ReportItems>
+                <PageBreak>
+                  <BreakLocation>End</BreakLocation>
+                </PageBreak>
+                <DataElementOutput>ContentsOnly</DataElementOutput>
+                <Top>8cm</Top>
+                <Height>1.5cm</Height>
+                <Width>17cm</Width>
+                <ZIndex>1</ZIndex>
+                <Style>
+                  <FontFamily>宋体</FontFamily>
+                </Style>
+              </Rectangle>
+              <Rectangle Name="rectangle5">
+                <ReportItems>
+                  <Subreport Name="subreport2">
+                    <ReportName>Report_zyb_tz1</ReportName>
+                    <KeepTogether>true</KeepTogether>
+                    <Height>1.25cm</Height>
+                    <Width>17cm</Width>
+                    <Style>
+                      <Border />
+                      <FontFamily>宋体</FontFamily>
+                    </Style>
+                  </Subreport>
+                </ReportItems>
+                <PageBreak>
+                  <BreakLocation>End</BreakLocation>
+                </PageBreak>
+                <DataElementOutput>ContentsOnly</DataElementOutput>
+                <Top>6cm</Top>
+                <Height>1.5cm</Height>
+                <Width>17cm</Width>
+                <ZIndex>2</ZIndex>
+                <Style>
+                  <FontFamily>宋体</FontFamily>
+                </Style>
+              </Rectangle>
+              <Rectangle Name="rectangle4">
+                <ReportItems>
+                  <Subreport Name="subreport4">
+                    <ReportName>Report_zyb_zz</ReportName>
+                    <KeepTogether>true</KeepTogether>
+                    <Height>1.25cm</Height>
+                    <Width>17cm</Width>
+                    <Style>
+                      <FontFamily>宋体</FontFamily>
+                    </Style>
+                  </Subreport>
+                </ReportItems>
+                <PageBreak>
+                  <BreakLocation>End</BreakLocation>
+                </PageBreak>
+                <DataElementOutput>ContentsOnly</DataElementOutput>
+                <Top>4cm</Top>
+                <Height>1.5cm</Height>
+                <Width>17cm</Width>
+                <ZIndex>3</ZIndex>
+                <Style>
+                  <FontFamily>宋体</FontFamily>
+                </Style>
+              </Rectangle>
+              <Rectangle Name="rectangle3">
+                <ReportItems>
+                  <Subreport Name="subreport3">
+                    <ReportName>Report_zyb_zysbs</ReportName>
+                    <KeepTogether>true</KeepTogether>
+                    <Height>1.5cm</Height>
+                    <Width>17cm</Width>
+                    <Style>
+                      <FontFamily>宋体</FontFamily>
+                    </Style>
+                  </Subreport>
+                </ReportItems>
+                <PageBreak>
+                  <BreakLocation>End</BreakLocation>
+                </PageBreak>
+                <DataElementOutput>ContentsOnly</DataElementOutput>
+                <Top>2cm</Top>
+                <Height>2cm</Height>
+                <Width>17cm</Width>
+                <ZIndex>4</ZIndex>
+                <Style>
+                  <FontFamily>宋体</FontFamily>
+                </Style>
+              </Rectangle>
+            </ReportItems>
+            <DataElementOutput>ContentsOnly</DataElementOutput>
+            <Top>2cm</Top>
+            <Height>9.5cm</Height>
+            <Width>17cm</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+          </Rectangle>
+        </ReportItems>
+        <DataElementOutput>ContentsOnly</DataElementOutput>
+        <Top>0.18931cm</Top>
+        <Height>11.5cm</Height>
+        <Width>17cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+      </Rectangle>
+      <Rectangle Name="rectangle7">
+        <ReportItems>
+          <Subreport Name="subreport7">
+            <ReportName>Report_zyb_hyjqtjc</ReportName>
+            <KeepTogether>true</KeepTogether>
+            <Height>1.25cm</Height>
+            <Width>17cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+          </Subreport>
+          <Rectangle Name="rectangle8">
+            <ReportItems>
+              <Subreport Name="subreport8">
+                <ReportName>Report_tjbg_zybzs</ReportName>
+                <KeepTogether>true</KeepTogether>
+                <Height>1.25cm</Height>
+                <Width>17cm</Width>
+                <Style>
+                  <Border />
+                  <FontFamily>宋体</FontFamily>
+                </Style>
+              </Subreport>
+            </ReportItems>
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <DataElementOutput>ContentsOnly</DataElementOutput>
+            <Top>1.5cm</Top>
+            <Left>0.01323cm</Left>
+            <Height>1.5cm</Height>
+            <Width>17cm</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+          </Rectangle>
+        </ReportItems>
+        <PageBreak>
+          <BreakLocation>End</BreakLocation>
+        </PageBreak>
+        <DataElementOutput>ContentsOnly</DataElementOutput>
+        <Top>11.68931cm</Top>
+        <Height>3cm</Height>
+        <Width>17.01323cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+      </Rectangle>
+    </ReportItems>
+    <Height>14.68931cm</Height>
+    <Style />
+  </Body>
+  <ReportParameters>
+    <ReportParameter Name="dqrq">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_0</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="title">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="bbmc">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_2</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="barcode">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>barcode</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="dz">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_4</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="dh">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_5</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="lxr">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_6</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="zgbh">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_7</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Width>18.12448cm</Width>
+  <Page>
+    <PageFooter>
+      <Height>0.63492cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="textbox1">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>="第" &amp; Globals!PageNumber &amp; "页   共" &amp; Globals!TotalPages &amp; "页"</Value>
+                  <Style>
+                    <FontFamily>宋体</FontFamily>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>textbox1</rd:DefaultName>
+          <Left>0.03969cm</Left>
+          <Height>0.63492cm</Height>
+          <Width>17cm</Width>
+          <Style>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style />
+    </PageFooter>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2.5cm</LeftMargin>
+    <RightMargin>2.5cm</RightMargin>
+    <TopMargin>2.5cm</TopMargin>
+    <BottomMargin>2.5cm</BottomMargin>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <Language>zh-CN</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportID>c9952cea-081f-4584-815d-2a1078eed873</rd:ReportID>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+</Report>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <Body>
+    <ReportItems>
+      <Rectangle Name="rectangle2">
+        <ReportItems>
+          <Subreport Name="subreport2">
+            <ReportName>Report_jcb_jbxx2</ReportName>
+            <Parameters>
+              <Parameter Name="dyrq">
+                <Value>=Parameters!bgrq.Value</Value>
+              </Parameter>
+              <Parameter Name="title">
+                <Value>=Parameters!title.Value</Value>
+              </Parameter>
+              <Parameter Name="fph">
+                <Value>=Parameters!fph.Value</Value>
+              </Parameter>
+            </Parameters>
+            <KeepTogether>true</KeepTogether>
+            <Height>1.25cm</Height>
+            <Width>17cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+          </Subreport>
+        </ReportItems>
+        <PageBreak>
+          <BreakLocation>End</BreakLocation>
+        </PageBreak>
+        <DataElementOutput>ContentsOnly</DataElementOutput>
+        <Top>2cm</Top>
+        <Height>1.5cm</Height>
+        <Width>17cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+      </Rectangle>
+      <Rectangle Name="rectangle1">
+        <ReportItems>
+          <Subreport Name="subreport1">
+            <ReportName>Report_jcb_jbxx1</ReportName>
+            <Parameters>
+              <Parameter Name="title">
+                <Value>=Parameters!title.Value</Value>
+              </Parameter>
+              <Parameter Name="number">
+                <Value>=Parameters!number.Value</Value>
+              </Parameter>
+              <Parameter Name="fph">
+                <Value>=Parameters!fph.Value</Value>
+              </Parameter>
+            </Parameters>
+            <KeepTogether>true</KeepTogether>
+            <Height>1.25cm</Height>
+            <Width>17cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+          </Subreport>
+        </ReportItems>
+        <PageBreak>
+          <BreakLocation>End</BreakLocation>
+        </PageBreak>
+        <DataElementOutput>ContentsOnly</DataElementOutput>
+        <Height>1.5cm</Height>
+        <Width>17cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+      </Rectangle>
+    </ReportItems>
+    <Height>3.5cm</Height>
+    <Style />
+  </Body>
+  <ReportParameters>
+    <ReportParameter Name="number">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_0</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="title">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="bgrq">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_2</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="fph">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_3</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Width>17cm</Width>
+  <Page>
+    <PageFooter>
+      <Height>0.75cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="textbox2">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>="第" &amp; Globals!PageNumber &amp; "页   共" &amp; Globals!TotalPages &amp; "页"</Value>
+                  <Style>
+                    <FontFamily>宋体</FontFamily>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>textbox2</rd:DefaultName>
+          <Top>0.05754cm</Top>
+          <Left>11.5cm</Left>
+          <Height>0.63493cm</Height>
+          <Width>5.25cm</Width>
+          <Style>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style />
+    </PageFooter>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2.5cm</LeftMargin>
+    <RightMargin>2.5cm</RightMargin>
+    <TopMargin>2.5cm</TopMargin>
+    <BottomMargin>2.5cm</BottomMargin>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <Language>zh-CN</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportID>b2265913-3c53-41a3-aae0-22bd08c89104</rd:ReportID>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+</Report>

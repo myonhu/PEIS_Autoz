@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="PEISConnectionString1">
+      <rd:DataSourceID>afb7023d-fe6e-4860-98d2-814c39d82c47</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=WGH;Initial Catalog=PEIS;Integrated Security=True</ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <ReportParameters>
+    <ReportParameter Name="dwmc">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>dwmc</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ZYBG_Top">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ZYBG_Top</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>2.5cm</RightMargin>
+  <LeftMargin>2.5cm</LeftMargin>
+  <BottomMargin>2.5cm</BottomMargin>
+  <rd:ReportID>cc332570-5e8f-4ad0-9139-68a1e81bc494</rd:ReportID>
+  <PageWidth>21cm</PageWidth>
+  <DataSets>
+    <DataSet Name="PEISDataSet_v_tj_zyjgb">
+      <Fields>
+        <Field Name="姓名">
+          <DataField>姓名</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="性别">
+          <DataField>性别</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="年龄">
+          <DataField>年龄</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="民族">
+          <DataField>民族</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="电话">
+          <DataField>电话</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="体检日期">
+          <DataField>体检日期</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="体质类型">
+          <DataField>体质类型</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="健康建议">
+          <DataField>健康建议</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="体质建议">
+          <DataField>体质建议</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>PEISConnectionString1</DataSourceName>
+        <CommandText>SELECT 姓名, 性别, 年龄, 民族, 电话, 体检日期, 体质类型, 健康建议, 体质建议 FROM dbo.v_tj_zyjgb</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>PEISDataSet</rd:DataSetName>
+        <rd:TableName>v_tj_zyjgb</rd:TableName>
+        <rd:TableAdapterName>v_tj_zyjgbTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>17.25cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Image Name="image1">
+        <Sizing>Fit</Sizing>
+        <Source>External</Source>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <ZIndex>8</ZIndex>
+        <Height>2.25cm</Height>
+        <Value>=Parameters!ZYBG_Top.Value</Value>
+      </Image>
+      <Textbox Name="textbox5">
+        <Top>3.5cm</Top>
+        <Width>4.5cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>7</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>5.75cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>="体检日期：" &amp; First(Fields!体检日期.Value)</Value>
+      </Textbox>
+      <Table Name="table1">
+        <ZIndex>6</ZIndex>
+        <DataSetName>PEISDataSet_v_tj_zyjgb</DataSetName>
+        <Top>4.97354cm</Top>
+        <Width>16.60979cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox4">
+                      <rd:DefaultName>textbox4</rd:DefaultName>
+                      <Style>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>1</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ColSpan>2</ColSpan>
+                  <ReportItems>
+                    <Textbox Name="体质建议">
+                      <rd:DefaultName>体质建议</rd:DefaultName>
+                      <Style>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=First(Fields!体质建议.Value)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.63492cm</Height>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <TableColumns>
+          <TableColumn>
+            <Width>0.5cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>5.60979cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>10.5cm</Width>
+          </TableColumn>
+        </TableColumns>
+        <Left>0.25cm</Left>
+      </Table>
+      <Textbox Name="textbox3">
+        <Top>4.22354cm</Top>
+        <Width>15.5cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>5</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.75cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>="您的体质类型是：" &amp; First(Fields!体质类型.Value)</Value>
+      </Textbox>
+      <Textbox Name="textbox2">
+        <Top>3.5cm</Top>
+        <Width>4.5cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>4</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.75cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>="电话：" &amp; First(Fields!电话.Value)</Value>
+      </Textbox>
+      <Textbox Name="民族">
+        <rd:DefaultName>民族</rd:DefaultName>
+        <Top>2.77645cm</Top>
+        <Width>3.03968cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>13.5cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>="民族：" &amp; First(Fields!民族.Value)</Value>
+      </Textbox>
+      <Textbox Name="年龄">
+        <rd:DefaultName>年龄</rd:DefaultName>
+        <Top>2.77645cm</Top>
+        <Width>2.53968cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>9.75cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>="年龄：" &amp; First(Fields!年龄.Value)</Value>
+      </Textbox>
+      <Textbox Name="性别">
+        <rd:DefaultName>性别</rd:DefaultName>
+        <Top>2.77645cm</Top>
+        <Width>2.53968cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>5.75cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>="性别：" &amp; First(Fields!性别.Value)</Value>
+      </Textbox>
+      <Textbox Name="姓名">
+        <rd:DefaultName>姓名</rd:DefaultName>
+        <Top>2.77645cm</Top>
+        <Width>4.5cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>0.75cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>="姓名：" &amp; First(Fields!姓名.Value)</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>5.60846cm</Height>
+  </Body>
+  <Language>zh-CN</Language>
+  <PageFooter>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Textbox Name="textbox6">
+        <rd:DefaultName>textbox6</rd:DefaultName>
+        <Width>16.5cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <FontSize>12pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>0.25cm</Left>
+        <Value>=Parameters!dwmc.Value</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>0.63492cm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageFooter>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

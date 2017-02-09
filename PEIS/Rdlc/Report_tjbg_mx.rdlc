@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <Body>
+    <ReportItems>
+      <Rectangle Name="rectangle2">
+        <ReportItems>
+          <Subreport Name="subreport3">
+            <ReportName>mx3</ReportName>
+            <KeepTogether>true</KeepTogether>
+            <Top>1.5cm</Top>
+            <Height>0.75cm</Height>
+            <Width>17cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+          </Subreport>
+          <Subreport Name="subreport1">
+            <ReportName>mx2</ReportName>
+            <KeepTogether>true</KeepTogether>
+            <Top>0.75cm</Top>
+            <Height>0.75cm</Height>
+            <Width>17cm</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+          </Subreport>
+          <Subreport Name="subreport2">
+            <ReportName>mx1</ReportName>
+            <KeepTogether>true</KeepTogether>
+            <Height>0.75cm</Height>
+            <Width>17cm</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+          </Subreport>
+        </ReportItems>
+        <DataElementOutput>ContentsOnly</DataElementOutput>
+        <Height>4.75cm</Height>
+        <Width>17cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+      </Rectangle>
+    </ReportItems>
+    <Height>4.75cm</Height>
+    <Style />
+  </Body>
+  <Width>17cm</Width>
+  <Page>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2.5cm</LeftMargin>
+    <RightMargin>2.5cm</RightMargin>
+    <TopMargin>2.5cm</TopMargin>
+    <BottomMargin>2.5cm</BottomMargin>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <Language>zh-CN</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportID>5e1bf61b-9158-4708-a556-deaafb817273</rd:ReportID>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+</Report>

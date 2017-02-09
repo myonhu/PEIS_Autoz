@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="PEISConnectionString">
+      <rd:DataSourceID>896fa1a5-dc72-4788-8c9a-bff94951f742</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=ql;Initial Catalog=PEIS;Persist Security Info=True;User ID=sa;Password=omg2000</ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <ReportParameters>
+    <ReportParameter Name="dwmc">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_0</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="tjrq">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="bgrqdx">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_2</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="gzjwhys">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_3</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ys">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_4</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="rownum">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_5</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="page1">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_6</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="page2">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_7</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="page3">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_8</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="page4">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_9</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="page5">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_10</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="page6">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_11</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="page7">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_12</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="page8">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_13</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="page9">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_14</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="page10">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_15</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>2.5cm</RightMargin>
+  <LeftMargin>2.5cm</LeftMargin>
+  <BottomMargin>2.5cm</BottomMargin>
+  <rd:ReportID>ff4a2ef7-e5d9-47eb-a635-9ead0e2694e0</rd:ReportID>
+  <PageWidth>21cm</PageWidth>
+  <DataSets>
+    <DataSet Name="PEISDataSet_v_sz_tjbg">
+      <Fields>
+        <Field Name="bgid">
+          <DataField>bgid</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="maxdate">
+          <DataField>maxdate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="sjdw">
+          <DataField>sjdw</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="tjrs">
+          <DataField>tjrs</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="tjxm">
+          <DataField>tjxm</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="tjjl">
+          <DataField>tjjl</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="gz">
+          <DataField>gz</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="zrs">
+          <DataField>zrs</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="jkycrs">
+          <DataField>jkycrs</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="zyycrs">
+          <DataField>zyycrs</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="dwmc">
+          <DataField>dwmc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="mindate">
+          <DataField>mindate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="rylb">
+          <DataField>rylb</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="whys">
+          <DataField>whys</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>PEISConnectionString</DataSourceName>
+        <CommandText>SELECT bgid, maxdate, sjdw, tjrs, tjxm, tjjl, gz, zrs, jkycrs, zyycrs, dwmc, mindate, rylb, whys FROM v_sz_tjbg</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>PEISDataSet</rd:DataSetName>
+        <rd:TableName>v_sz_tjbg</rd:TableName>
+        <rd:TableAdapterName>v_sz_tjbgTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="PEISDataSet_v_sz_tjbg_mxfz">
+      <Fields>
+        <Field Name="maxdate">
+          <DataField>maxdate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="sjdw">
+          <DataField>sjdw</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="jg">
+          <DataField>jg</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>PEISConnectionString</DataSourceName>
+        <CommandText>SELECT maxdate, sjdw, jg FROM dbo.v_sz_tjbg_mxfz</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>PEISDataSet</rd:DataSetName>
+        <rd:TableName>v_sz_tjbg_mxfz</rd:TableName>
+        <rd:TableAdapterName>v_sz_tjbg_mxfzTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>28cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Subreport Name="subreport1">
+        <Parameters>
+          <Parameter Name="dwmc">
+            <Value>=Parameters!dwmc.Value</Value>
+          </Parameter>
+          <Parameter Name="tjrq">
+            <Value>=Parameters!tjrq.Value</Value>
+          </Parameter>
+          <Parameter Name="bgrqdx">
+            <Value>=Parameters!bgrqdx.Value</Value>
+          </Parameter>
+          <Parameter Name="gzjwhys">
+            <Value>=Parameters!gzjwhys.Value</Value>
+          </Parameter>
+          <Parameter Name="ys">
+            <Value>=Parameters!ys.Value</Value>
+          </Parameter>
+          <Parameter Name="rownum">
+            <Value>=Parameters!rownum.Value</Value>
+          </Parameter>
+          <Parameter Name="page1">
+            <Value>=Parameters!page1.Value</Value>
+          </Parameter>
+          <Parameter Name="page2">
+            <Value>=Parameters!page2.Value</Value>
+          </Parameter>
+          <Parameter Name="page3">
+            <Value>=Parameters!page3.Value</Value>
+          </Parameter>
+          <Parameter Name="page4">
+            <Value>=Parameters!page4.Value</Value>
+          </Parameter>
+          <Parameter Name="page5">
+            <Value>=Parameters!page5.Value</Value>
+          </Parameter>
+          <Parameter Name="page6">
+            <Value>=Parameters!page6.Value</Value>
+          </Parameter>
+          <Parameter Name="page7">
+            <Value>=Parameters!page7.Value</Value>
+          </Parameter>
+          <Parameter Name="page8">
+            <Value>=Parameters!page8.Value</Value>
+          </Parameter>
+          <Parameter Name="page9">
+            <Value>=Parameters!page9.Value</Value>
+          </Parameter>
+          <Parameter Name="page10">
+            <Value>=Parameters!page10.Value</Value>
+          </Parameter>
+        </Parameters>
+        <Top>2.5cm</Top>
+        <ReportName>Report_zyjc_mx</ReportName>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <ZIndex>9</ZIndex>
+        <Height>1.25cm</Height>
+      </Subreport>
+      <Textbox Name="textbox9">
+        <Top>9.75cm</Top>
+        <Style>
+          <FontFamily>仿宋_GB2312</FontFamily>
+          <FontSize>16pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>8</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Height>1cm</Height>
+        <Value>="    1、  " &amp; First(Fields!tjjl.Value, "PEISDataSet_v_sz_tjbg")</Value>
+      </Textbox>
+      <Textbox Name="textbox8">
+        <Top>8.75cm</Top>
+        <Style>
+          <FontFamily>仿宋_GB2312</FontFamily>
+          <FontSize>16pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>7</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Height>1cm</Height>
+        <Value>="    二、	体检结论："</Value>
+      </Textbox>
+      <Textbox Name="textbox7">
+        <Top>7.75cm</Top>
+        <Style>
+          <FontFamily>仿宋_GB2312</FontFamily>
+          <FontSize>16pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>6</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Height>1cm</Height>
+        <Value>="    详细体检结果见《职业健康体检结果表》的个人体检结果报告。"</Value>
+      </Textbox>
+      <Textbox Name="textbox6">
+        <Top>6.75cm</Top>
+        <Style>
+          <FontFamily>仿宋_GB2312</FontFamily>
+          <FontSize>16pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>5</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Height>1cm</Height>
+        <Value>=Fields!jg.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox5">
+        <Top>5.75cm</Top>
+        <Style>
+          <FontFamily>仿宋_GB2312</FontFamily>
+          <FontSize>16pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>4</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Height>1cm</Height>
+        <Value>="    一、	体检结果："</Value>
+      </Textbox>
+      <Textbox Name="textbox4">
+        <Top>4.75cm</Top>
+        <Style>
+          <FontFamily>仿宋_GB2312</FontFamily>
+          <FontSize>16pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Height>1cm</Height>
+        <Value>="    现将本次体检结果报告如下："</Value>
+      </Textbox>
+      <Textbox Name="textbox3">
+        <Top>3.75cm</Top>
+        <Style>
+          <FontFamily>仿宋_GB2312</FontFamily>
+          <FontSize>16pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Height>1cm</Height>
+        <Value>="    根据所接触的职业危害因素类别，本次职业健康体检项目包括：" &amp; First(Fields!tjxm.Value, "PEISDataSet_v_sz_tjbg")</Value>
+      </Textbox>
+      <Textbox Name="textbox2">
+        <Top>1.5cm</Top>
+        <Style>
+          <FontFamily>仿宋_GB2312</FontFamily>
+          <FontSize>16pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Height>1cm</Height>
+        <Value>=First(Fields!dwmc.Value, "PEISDataSet_v_sz_tjbg") &amp; "："</Value>
+      </Textbox>
+      <Textbox Name="textbox1">
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Style>
+          <FontFamily>仿宋_GB2312</FontFamily>
+          <FontSize>22pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>1cm</Height>
+        <Value>=First(Fields!dwmc.Value, "PEISDataSet_v_sz_tjbg") &amp; "职业健康体检报告"</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>14.25cm</Height>
+  </Body>
+  <Language>zh-CN</Language>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

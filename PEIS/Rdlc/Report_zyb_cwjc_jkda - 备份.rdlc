@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <ReportParameters>
+    <ReportParameter Name="title">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_0</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="bbmc">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>2.5cm</RightMargin>
+  <LeftMargin>2.5cm</LeftMargin>
+  <BottomMargin>2.5cm</BottomMargin>
+  <rd:ReportID>92deea8e-8c0b-45dd-af66-e26347819102</rd:ReportID>
+  <PageWidth>21cm</PageWidth>
+  <Width>17cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Rectangle Name="rectangle1">
+        <ZIndex>2</ZIndex>
+        <ReportItems>
+          <Subreport Name="subreport1">
+            <Parameters>
+              <Parameter Name="title">
+                <Value>=Parameters!title.Value</Value>
+              </Parameter>
+              <Parameter Name="bbmc">
+                <Value>=Parameters!bbmc.Value</Value>
+              </Parameter>
+            </Parameters>
+            <ReportName>Report_zyb_jbxx</ReportName>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <Height>1.25cm</Height>
+          </Subreport>
+        </ReportItems>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <Height>1.5cm</Height>
+      </Rectangle>
+      <Rectangle Name="rectangle2">
+        <ZIndex>1</ZIndex>
+        <ReportItems>
+          <Subreport Name="subreport2">
+            <ReportName>Report_zyb_tljc_jbxx</ReportName>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <Height>1.25cm</Height>
+          </Subreport>
+        </ReportItems>
+        <Top>2cm</Top>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <PageBreakAtEnd>true</PageBreakAtEnd>
+        <Height>1.5cm</Height>
+      </Rectangle>
+      <Rectangle Name="rectangle3">
+        <ReportItems>
+          <Subreport Name="subreport3">
+            <ReportName>Report_zyb_tljc_jcjg</ReportName>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <Height>1.25cm</Height>
+          </Subreport>
+        </ReportItems>
+        <Top>3.75cm</Top>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <PageBreakAtEnd>true</PageBreakAtEnd>
+      </Rectangle>
+    </ReportItems>
+    <Height>5.25cm</Height>
+  </Body>
+  <Language>zh-CN</Language>
+  <PageFooter>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Textbox Name="textbox1">
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Top>0.05754cm</Top>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>="第" &amp; Globals!PageNumber &amp; "页   共" &amp; Globals!TotalPages &amp; "页"</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>0.75cm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageFooter>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

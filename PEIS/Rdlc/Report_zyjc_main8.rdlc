@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <Body>
+    <ReportItems>
+      <Rectangle Name="rectangle3">
+        <ReportItems>
+          <Subreport Name="subreport3">
+            <ReportName>Report_zyjc_tzs_column7</ReportName>
+            <Parameters>
+              <Parameter Name="dwmc">
+                <Value>=Parameters!dwmc.Value</Value>
+              </Parameter>
+              <Parameter Name="zrs">
+                <Value>=Parameters!zrs.Value</Value>
+              </Parameter>
+              <Parameter Name="tjrq">
+                <Value>=Parameters!tjrq.Value</Value>
+              </Parameter>
+              <Parameter Name="bgsj">
+                <Value>=Parameters!bgrq.Value</Value>
+              </Parameter>
+            </Parameters>
+            <KeepTogether>true</KeepTogether>
+            <Height>1.5cm</Height>
+            <Width>27.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+          </Subreport>
+        </ReportItems>
+        <PageBreak>
+          <BreakLocation>End</BreakLocation>
+        </PageBreak>
+        <DataElementOutput>ContentsOnly</DataElementOutput>
+        <Top>5cm</Top>
+        <Height>2cm</Height>
+        <Width>28cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+      </Rectangle>
+      <Rectangle Name="rectangle2">
+        <ReportItems>
+          <Subreport Name="subreport2">
+            <ReportName>Report_zyjc_hzxx</ReportName>
+            <KeepTogether>true</KeepTogether>
+            <Height>1.5cm</Height>
+            <Width>27.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+          </Subreport>
+        </ReportItems>
+        <PageBreak>
+          <BreakLocation>End</BreakLocation>
+        </PageBreak>
+        <DataElementOutput>ContentsOnly</DataElementOutput>
+        <Top>2.5cm</Top>
+        <Height>2cm</Height>
+        <Width>28cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+      </Rectangle>
+      <Rectangle Name="rectangle1">
+        <ReportItems>
+          <Subreport Name="subreport1">
+            <ReportName>Report_jcjg_fm</ReportName>
+            <Parameters>
+              <Parameter Name="dwmc">
+                <Value>=Parameters!dwmc.Value</Value>
+              </Parameter>
+              <Parameter Name="bgrq">
+                <Value>=Parameters!bgrqdx.Value</Value>
+              </Parameter>
+            </Parameters>
+            <KeepTogether>true</KeepTogether>
+            <Height>1.5cm</Height>
+            <Width>27.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+          </Subreport>
+        </ReportItems>
+        <PageBreak>
+          <BreakLocation>End</BreakLocation>
+        </PageBreak>
+        <DataElementOutput>ContentsOnly</DataElementOutput>
+        <Height>2cm</Height>
+        <Width>28cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+      </Rectangle>
+    </ReportItems>
+    <Height>7cm</Height>
+    <Style />
+  </Body>
+  <ReportParameters>
+    <ReportParameter Name="dwmc">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_0</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="zrs">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="tjrq">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_2</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="bgrq">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_3</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="bgrqdx">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_4</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Width>28cm</Width>
+  <Page>
+    <PageFooter>
+      <Height>0.75cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <Style />
+    </PageFooter>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2.5cm</LeftMargin>
+    <RightMargin>2.5cm</RightMargin>
+    <TopMargin>2.5cm</TopMargin>
+    <BottomMargin>2.5cm</BottomMargin>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <Language>zh-CN</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportID>2302ed38-e2c4-45b7-801a-74ea402f243e</rd:ReportID>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+</Report>

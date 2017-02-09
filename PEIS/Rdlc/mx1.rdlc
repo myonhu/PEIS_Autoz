@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="PEISConnectionString">
+      <ConnectionProperties>
+        <ConnectString>Data Source=73BCB51AB08A4AF\MARSZ;Initial Catalog=PEIS;Persist Security Info=True;User ID=sa;Password=</ConnectString>
+        <DataProvider>SQL</DataProvider>
+      </ConnectionProperties>
+      <rd:DataSourceID>977f7d56-4295-4a92-ab46-75fc92e50573</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <BottomMargin>2.5cm</BottomMargin>
+  <RightMargin>2.5cm</RightMargin>
+  <PageWidth>21cm</PageWidth>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Table Name="table1">
+        <DataSetName>PEISDataSet_v_tjmx</DataSetName>
+        <Top>1.25cm</Top>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="MC">
+                      <rd:DefaultName>MC</rd:DefaultName>
+                      <ZIndex>4</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!MC.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="JG">
+                      <rd:DefaultName>JG</rd:DefaultName>
+                      <ZIndex>3</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!JG.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="DW">
+                      <rd:DefaultName>DW</rd:DefaultName>
+                      <ZIndex>2</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!DW.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="CKZ">
+                      <rd:DefaultName>CKZ</rd:DefaultName>
+                      <ZIndex>1</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!CKZ.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="TS">
+                      <rd:DefaultName>TS</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!TS.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.63492cm</Height>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <FontFamily>宋体</FontFamily>
+          <BorderColor>
+            <Default>Gray</Default>
+          </BorderColor>
+        </Style>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox3">
+                      <rd:DefaultName>textbox3</rd:DefaultName>
+                      <ZIndex>9</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <BorderColor>
+                          <Default>Gray</Default>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>项目名称</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox4">
+                      <rd:DefaultName>textbox4</rd:DefaultName>
+                      <ZIndex>8</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <BorderColor>
+                          <Default>Gray</Default>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>检查结果</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox5">
+                      <rd:DefaultName>textbox5</rd:DefaultName>
+                      <ZIndex>7</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <BorderColor>
+                          <Default>Gray</Default>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>单位</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox9">
+                      <rd:DefaultName>textbox9</rd:DefaultName>
+                      <ZIndex>6</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <BorderColor>
+                          <Default>Gray</Default>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>参考值</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox11">
+                      <rd:DefaultName>textbox11</rd:DefaultName>
+                      <ZIndex>5</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <BorderColor>
+                          <Default>Gray</Default>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>提示</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.63492cm</Height>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <TableColumns>
+          <TableColumn>
+            <Width>5cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>2.25cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>2.99296cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>3.01942cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>3.75cm</Width>
+          </TableColumn>
+        </TableColumns>
+        <Height>1.26984cm</Height>
+      </Table>
+    </ReportItems>
+    <Height>3.25cm</Height>
+  </Body>
+  <rd:ReportID>9241ea60-87ba-478d-bfbe-9d85a3ab2d1a</rd:ReportID>
+  <LeftMargin>2.5cm</LeftMargin>
+  <DataSets>
+    <DataSet Name="PEISDataSet_v_tjmx">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>PEISDataSet</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>v_tjmxTableAdapter</rd:TableAdapterName>
+        <rd:TableName>v_tjmx</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT TJBH, TJCS, DJLSH, XM, XB, CSNYR, PHONE, TJXMBH, TJXM, JG, MC, DW, ZCTS, LXBH, JCRQ, JCYS, CKZ, TS, XH, JGLX, sfyx, jcjylx, ysmc FROM dbo.v_tjmx</CommandText>
+        <DataSourceName>PEISConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="TJBH">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>TJBH</DataField>
+        </Field>
+        <Field Name="TJCS">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>TJCS</DataField>
+        </Field>
+        <Field Name="DJLSH">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>DJLSH</DataField>
+        </Field>
+        <Field Name="XM">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>XM</DataField>
+        </Field>
+        <Field Name="XB">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>XB</DataField>
+        </Field>
+        <Field Name="CSNYR">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>CSNYR</DataField>
+        </Field>
+        <Field Name="PHONE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>PHONE</DataField>
+        </Field>
+        <Field Name="TJXMBH">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>TJXMBH</DataField>
+        </Field>
+        <Field Name="TJXM">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>TJXM</DataField>
+        </Field>
+        <Field Name="JG">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>JG</DataField>
+        </Field>
+        <Field Name="MC">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>MC</DataField>
+        </Field>
+        <Field Name="DW">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>DW</DataField>
+        </Field>
+        <Field Name="ZCTS">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ZCTS</DataField>
+        </Field>
+        <Field Name="LXBH">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>LXBH</DataField>
+        </Field>
+        <Field Name="JCRQ">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>JCRQ</DataField>
+        </Field>
+        <Field Name="JCYS">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>JCYS</DataField>
+        </Field>
+        <Field Name="CKZ">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CKZ</DataField>
+        </Field>
+        <Field Name="TS">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>TS</DataField>
+        </Field>
+        <Field Name="XH">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>XH</DataField>
+        </Field>
+        <Field Name="JGLX">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>JGLX</DataField>
+        </Field>
+        <Field Name="sfyx">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>sfyx</DataField>
+        </Field>
+        <Field Name="jcjylx">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>jcjylx</DataField>
+        </Field>
+        <Field Name="ysmc">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ysmc</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Width>17.01942cm</Width>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <Language>zh-CN</Language>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

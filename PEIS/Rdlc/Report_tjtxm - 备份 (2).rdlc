@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="PEISConnectionString">
+      <ConnectionProperties>
+        <ConnectString>Data Source=wgh;Initial Catalog=PEIS;Persist Security Info=True;User ID=sa;Password=</ConnectString>
+        <DataProvider>SQL</DataProvider>
+      </ConnectionProperties>
+      <rd:DataSourceID>653ce0ef-d62b-4498-be2c-fa152f35bde5</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <BottomMargin>2.5cm</BottomMargin>
+  <RightMargin>2.5cm</RightMargin>
+  <PageWidth>21cm</PageWidth>
+  <ReportParameters>
+    <ReportParameter Name="barcode">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>条形码路径</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>false</rd:SnapToGrid>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Rectangle Name="rectangle3">
+        <Left>7.23545cm</Left>
+        <ReportItems>
+          <Textbox Name="textbox6">
+            <Left>2.25cm</Left>
+            <Top>1.07937cm</Top>
+            <ZIndex>3</ZIndex>
+            <Width>0.75cm</Width>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>宋体</FontFamily>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=First(Fields!nl.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox7">
+            <Left>1.5cm</Left>
+            <Top>1.07937cm</Top>
+            <ZIndex>2</ZIndex>
+            <Width>0.75cm</Width>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>宋体</FontFamily>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=First(Fields!xb.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox8">
+            <Top>1.07937cm</Top>
+            <ZIndex>1</ZIndex>
+            <Width>1.5cm</Width>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>宋体</FontFamily>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=First(Fields!xm.Value)</Value>
+          </Textbox>
+          <Image Name="image3">
+            <Sizing>AutoSize</Sizing>
+            <Source>External</Source>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <Height>1cm</Height>
+            <Value>=Parameters!barcode.Value</Value>
+          </Image>
+        </ReportItems>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+      </Rectangle>
+      <Rectangle Name="rectangle2">
+        <Left>3.61772cm</Left>
+        <ReportItems>
+          <Textbox Name="textbox3">
+            <Left>2.25cm</Left>
+            <Top>1.07937cm</Top>
+            <ZIndex>3</ZIndex>
+            <Width>0.75cm</Width>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>宋体</FontFamily>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=First(Fields!nl.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox4">
+            <Left>1.5cm</Left>
+            <Top>1.07937cm</Top>
+            <ZIndex>2</ZIndex>
+            <Width>0.75cm</Width>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>宋体</FontFamily>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=First(Fields!xb.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox5">
+            <Top>1.07937cm</Top>
+            <ZIndex>1</ZIndex>
+            <Width>1.5cm</Width>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>宋体</FontFamily>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=First(Fields!xm.Value)</Value>
+          </Textbox>
+          <Image Name="image2">
+            <Sizing>AutoSize</Sizing>
+            <Source>External</Source>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <Height>1cm</Height>
+            <Value>=Parameters!barcode.Value</Value>
+          </Image>
+        </ReportItems>
+        <ZIndex>1</ZIndex>
+        <Width>3.5cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+      </Rectangle>
+      <Rectangle Name="rectangle1">
+        <ReportItems>
+          <Textbox Name="textbox2">
+            <Left>2.25cm</Left>
+            <Top>0.89418cm</Top>
+            <ZIndex>3</ZIndex>
+            <Width>0.75cm</Width>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>宋体</FontFamily>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=First(Fields!nl.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox1">
+            <Left>1.5cm</Left>
+            <Top>0.89418cm</Top>
+            <ZIndex>2</ZIndex>
+            <Width>0.75cm</Width>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>宋体</FontFamily>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=First(Fields!xb.Value)</Value>
+          </Textbox>
+          <Textbox Name="xm">
+            <Top>0.89418cm</Top>
+            <rd:DefaultName>xm</rd:DefaultName>
+            <ZIndex>1</ZIndex>
+            <Width>1.5cm</Width>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>宋体</FontFamily>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=First(Fields!xm.Value)</Value>
+          </Textbox>
+          <Image Name="image1">
+            <Sizing>AutoSize</Sizing>
+            <Source>External</Source>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <Height>0.8cm</Height>
+            <Value>=Parameters!barcode.Value</Value>
+          </Image>
+        </ReportItems>
+        <Width>3.5cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <Height>1.39418cm</Height>
+      </Rectangle>
+    </ReportItems>
+    <Height>1.57937cm</Height>
+  </Body>
+  <rd:ReportID>8228798d-d12c-4e07-95db-cc0488ca55b1</rd:ReportID>
+  <LeftMargin>2.5cm</LeftMargin>
+  <DataSets>
+    <DataSet Name="PEISDataSet_v_tj_tjdjb">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>PEISDataSet</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>v_tj_tjdjbTableAdapter</rd:TableAdapterName>
+        <rd:TableName>v_tj_tjdjb</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT djlsh, xm, xb, nl, csrq, hyzk, mz, tjrq, djrq, tjbh, tjcs, dwmc, bmmc, tjlb, rylb, mobile, phone, address, sfzh, sykh, dwbh, bmbh, sumover, picture, xbcode, zs, jy, jcrq, jcys, tjjl, jktj, czy FROM v_tj_tjdjb</CommandText>
+        <DataSourceName>PEISConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="djlsh">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>djlsh</DataField>
+        </Field>
+        <Field Name="xm">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>xm</DataField>
+        </Field>
+        <Field Name="xb">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>xb</DataField>
+        </Field>
+        <Field Name="nl">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>nl</DataField>
+        </Field>
+        <Field Name="csrq">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>csrq</DataField>
+        </Field>
+        <Field Name="hyzk">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>hyzk</DataField>
+        </Field>
+        <Field Name="mz">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>mz</DataField>
+        </Field>
+        <Field Name="tjrq">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>tjrq</DataField>
+        </Field>
+        <Field Name="djrq">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>djrq</DataField>
+        </Field>
+        <Field Name="tjbh">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>tjbh</DataField>
+        </Field>
+        <Field Name="tjcs">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>tjcs</DataField>
+        </Field>
+        <Field Name="dwmc">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>dwmc</DataField>
+        </Field>
+        <Field Name="bmmc">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>bmmc</DataField>
+        </Field>
+        <Field Name="tjlb">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>tjlb</DataField>
+        </Field>
+        <Field Name="rylb">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>rylb</DataField>
+        </Field>
+        <Field Name="mobile">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>mobile</DataField>
+        </Field>
+        <Field Name="phone">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>phone</DataField>
+        </Field>
+        <Field Name="address">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>address</DataField>
+        </Field>
+        <Field Name="sfzh">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>sfzh</DataField>
+        </Field>
+        <Field Name="sykh">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>sykh</DataField>
+        </Field>
+        <Field Name="dwbh">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>dwbh</DataField>
+        </Field>
+        <Field Name="bmbh">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>bmbh</DataField>
+        </Field>
+        <Field Name="sumover">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>sumover</DataField>
+        </Field>
+        <Field Name="picture">
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+          <DataField>picture</DataField>
+        </Field>
+        <Field Name="xbcode">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>xbcode</DataField>
+        </Field>
+        <Field Name="zs">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>zs</DataField>
+        </Field>
+        <Field Name="jy">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>jy</DataField>
+        </Field>
+        <Field Name="jcrq">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>jcrq</DataField>
+        </Field>
+        <Field Name="jcys">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>jcys</DataField>
+        </Field>
+        <Field Name="tjjl">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>tjjl</DataField>
+        </Field>
+        <Field Name="jktj">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>jktj</DataField>
+        </Field>
+        <Field Name="czy">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>czy</DataField>
+        </Field>
+        <Field Name="tcmc">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>tcmc</DataField>
+        </Field>
+        <Field Name="barcode">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>barcode</DataField>
+        </Field>
+        <Field Name="zjys">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>zjys</DataField>
+        </Field>
+        <Field Name="fcrq">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>fcrq</DataField>
+        </Field>
+        <Field Name="fcgy">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>fcgy</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Code />
+  <Width>10.73545cm</Width>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <Language>zh-CN</Language>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

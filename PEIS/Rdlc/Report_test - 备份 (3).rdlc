@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <ConnectionProperties>
+        <ConnectString>Data Source=73BCB51AB08A4AF\MARSZ;Initial Catalog=PEIS;Persist Security Info=True;User ID=sa;Password=</ConnectString>
+        <DataProvider>SQL</DataProvider>
+      </ConnectionProperties>
+      <rd:DataSourceID>2b47151e-eccf-4791-af65-d16ed3461616</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <BottomMargin>2.5cm</BottomMargin>
+  <RightMargin>2.5cm</RightMargin>
+  <PageWidth>21cm</PageWidth>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <Height>9.75cm</Height>
+  </Body>
+  <rd:ReportID>7920e738-a596-40d2-8637-1572508ed6d3</rd:ReportID>
+  <LeftMargin>2.5cm</LeftMargin>
+  <DataSets>
+    <DataSet Name="PEISDataSet_tj_tjjlmxb">
+      <rd:DataSetInfo>
+        <rd:DataSetName>PEISDataSet</rd:DataSetName>
+        <rd:TableName>tj_tjjlmxb</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText />
+        <DataSourceName>DummyDataSource</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="tjxmbh">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>tjxmbh</DataField>
+        </Field>
+        <Field Name="tjxm">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>tjxm</DataField>
+        </Field>
+        <Field Name="mc">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>mc</DataField>
+        </Field>
+        <Field Name="jg">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>jg</DataField>
+        </Field>
+        <Field Name="dw">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>dw</DataField>
+        </Field>
+        <Field Name="sfyx">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>sfyx</DataField>
+        </Field>
+        <Field Name="ckz">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ckz</DataField>
+        </Field>
+        <Field Name="ts">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ts</DataField>
+        </Field>
+        <Field Name="jcrq">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>jcrq</DataField>
+        </Field>
+        <Field Name="jcys">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>jcys</DataField>
+        </Field>
+        <Field Name="jcjylx">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>jcjylx</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="PEISDataSet_tj_tjjlb">
+      <rd:DataSetInfo>
+        <rd:DataSetName>PEISDataSet</rd:DataSetName>
+        <rd:TableName>tj_tjjlb</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText />
+        <DataSourceName>DummyDataSource</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="xmlx">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>xmlx</DataField>
+        </Field>
+        <Field Name="mc">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>mc</DataField>
+        </Field>
+        <Field Name="lcyy">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>lcyy</DataField>
+        </Field>
+        <Field Name="tsxx">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>tsxx</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Width>20.40872cm</Width>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <Language>zh-CN</Language>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>
